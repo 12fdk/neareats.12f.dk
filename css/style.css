@@ -9,16 +9,34 @@
    components use a blue -> purple gradient. Surfaces come from the App Store
    screenshot frame (#FDE8D6 -> #FFFDF9, ink #1A1A1A). See DESIGN.md §2. */
 :root {
-  /* Brand — the app's accent and its glass gradient */
-  --blue: #007AFF;            /* .accentColor — every interactive thing */
+  /* Brand — the APP ICON, sampled from the shipped 1024px artwork.
+     The icon is an amber -> coral map pin on charcoal; it is the most-repeated
+     brand asset (App Store, home screen, favicon, header, hero), so the site
+     leads warm. Blue stays for links and secondary interactive, matching what
+     the app does once it is open. See DESIGN.md §2. */
+  --amber: #FFB025;           /* icon, pin top */
+  --amber-mid: #FF8740;       /* icon, pin middle */
+  --coral: #FF6750;           /* icon, pin tip */
+  --charcoal: #36333E;        /* icon ground */
+  --gradient: linear-gradient(135deg, var(--amber) 0%, var(--coral) 100%);
+  --on-gradient: #2A1500;     /* the ONLY safe ink on --gradient (9.5:1 / 6.1:1) */
+
+  /* Deep warm ramp — for full-bleed bands that carry WHITE copy.
+     The bright icon gradient cannot: white on it is 1.8-2.9:1. */
+  --brand-deep-1: #C2410C;
+  --brand-deep-2: #9A2A12;
+  --brand-deep: linear-gradient(135deg, var(--brand-deep-1) 0%, var(--brand-deep-2) 100%);
+  --warm-ink: #A83A0C;        /* warm text on white / cream — AA everywhere */
+
+  /* Blue — the app's in-app accent. Links and secondary interactive. */
+  --blue: #007AFF;            /* .accentColor */
   --blue-strong: #0063D1;     /* links / small text on white — AA safe */
   --blue-dark: #0050A8;
   --purple: #AF52DE;          /* app: a venue found in BOTH OSM + Apple Maps */
   --purple-strong: #8E3FBE;
-  --gradient: linear-gradient(135deg, var(--blue) 0%, var(--purple) 100%);
   --gradient-wash: linear-gradient(135deg,
-                     rgba(0, 122, 255, 0.10) 0%,
-                     rgba(175, 82, 222, 0.10) 100%);
+                     rgba(255, 176, 37, 0.12) 0%,
+                     rgba(255, 103, 80, 0.12) 100%);
 
   /* App semantic colours — these MEAN things, don't redecorate with them */
   --green: #34C759;           /* Open now · OpenStreetMap · vegan */
@@ -71,7 +89,7 @@
   --shadow-sm: 0 1px 2px rgba(26, 26, 26, 0.06), 0 2px 8px rgba(26, 26, 26, 0.04);
   --shadow-md: 0 4px 12px rgba(26, 26, 26, 0.07), 0 12px 32px rgba(26, 26, 26, 0.06);
   --shadow-lg: 0 8px 24px rgba(26, 26, 26, 0.09), 0 24px 64px rgba(88, 40, 140, 0.14);
-  --shadow-brand: 0 10px 30px rgba(0, 122, 255, 0.30);
+  --shadow-brand: 0 10px 30px rgba(255, 122, 60, 0.34);
   --shadow-glass: 0 2px 10px rgba(26, 26, 26, 0.06), 0 12px 40px rgba(0, 80, 168, 0.10);
 
   /* Shape */
@@ -90,9 +108,10 @@
   --gutter: 24px;
   --header-h: 68px;
 
-  /* Hand-drawn marker (orange highlighter, #FF9500) */
-  --marker: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 32' preserveAspectRatio='none'%3E%3Cpath d='M2.4 9.6C34 5.2 78 3.4 121 4.1c26 .4 49 1.7 76 3.6-3 8.4-4.4 14.2-5.6 21.5-38-2.2-72-3.3-104-3-25 .2-50 1.2-84 3.1C4.6 22.6 3.4 16.2 2.4 9.6Z' fill='%23FF9500'/%3E%3C/svg%3E");
-  --underline: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 14' preserveAspectRatio='none'%3E%3Cpath d='M4 9.5C46 4 108 3 196 6.5' stroke='%23FF9500' stroke-width='6' stroke-linecap='round' fill='none'/%3E%3C/svg%3E");
+  /* Hand-drawn marker — the BRAND amber #FFB025, not the semantic
+     orange #FF9500, so the highlighter never reads as "closes soon". */
+  --marker: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 32' preserveAspectRatio='none'%3E%3Cpath d='M2.4 9.6C34 5.2 78 3.4 121 4.1c26 .4 49 1.7 76 3.6-3 8.4-4.4 14.2-5.6 21.5-38-2.2-72-3.3-104-3-25 .2-50 1.2-84 3.1C4.6 22.6 3.4 16.2 2.4 9.6Z' fill='%23FFB025'/%3E%3C/svg%3E");
+  --underline: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 14' preserveAspectRatio='none'%3E%3Cpath d='M4 9.5C46 4 108 3 196 6.5' stroke='%23FFB025' stroke-width='6' stroke-linecap='round' fill='none'/%3E%3C/svg%3E");
 }
 
 @media (prefers-color-scheme: dark) {
@@ -145,14 +164,17 @@
     --brown-wash: rgba(172, 142, 104, 0.20);
     --gold-wash: rgba(224, 184, 74, 0.16);
     --gradient-wash: linear-gradient(135deg,
-                       rgba(10, 132, 255, 0.16) 0%,
-                       rgba(191, 90, 242, 0.16) 100%);
-    --gradient: linear-gradient(135deg, #007AFF 0%, #AF52DE 100%);
+                       rgba(255, 176, 37, 0.16) 0%,
+                       rgba(255, 103, 80, 0.16) 100%);
+    --gradient: linear-gradient(135deg, #FFB025 0%, #FF6750 100%);
+    --brand-deep-1: #D4551C;
+    --brand-deep-2: #A83318;
+    --warm-ink: #FFA870;
 
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
     --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4), 0 12px 32px rgba(0, 0, 0, 0.3);
     --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.45), 0 24px 64px rgba(0, 0, 0, 0.4);
-    --shadow-brand: 0 10px 30px rgba(0, 122, 255, 0.42);
+    --shadow-brand: 0 10px 30px rgba(255, 122, 60, 0.40);
     --shadow-glass: 0 2px 10px rgba(0, 0, 0, 0.4), 0 12px 40px rgba(0, 0, 0, 0.32);
   }
 }
@@ -182,7 +204,7 @@ a:hover { text-decoration: underline; }
 ul, ol { list-style: none; }
 
 :focus-visible {
-  outline: 3px solid var(--orange);
+  outline: 3px solid var(--amber);
   outline-offset: 3px;
   border-radius: 4px;
 }
@@ -295,13 +317,16 @@ h3 { font-size: 1.2rem; line-height: 1.3; }
 .btn:hover { text-decoration: none; transform: translateY(-2px); }
 .btn:active { transform: translateY(0); }
 
-.btn--primary { background: var(--gradient); color: var(--on-brand); box-shadow: var(--shadow-brand); }
-.btn--primary:hover { box-shadow: 0 14px 36px rgba(0, 122, 255, 0.42); }
+.btn--primary { background: var(--gradient); color: var(--on-gradient); box-shadow: var(--shadow-brand); }
+.btn--primary:hover { box-shadow: 0 14px 36px rgba(255, 122, 60, 0.46); }
 
-.btn--orange { background: var(--orange); color: #2A1500; box-shadow: 0 10px 26px rgba(255, 149, 0, 0.36); }
+/* Secondary CTA — the app's blue, so blue keeps its in-app role. Uses
+   --blue-strong, not --blue: white on #007AFF is only 4.02:1. */
+.btn--blue { background: var(--blue-strong); color: #FFFFFF; box-shadow: 0 10px 26px rgba(0, 99, 209, 0.28); }
+.btn--blue:hover { box-shadow: 0 14px 34px rgba(0, 99, 209, 0.36); }
 
 .btn--ghost { background: transparent; color: var(--ink); border-color: var(--line); }
-.btn--ghost:hover { border-color: var(--blue); color: var(--blue-strong); }
+.btn--ghost:hover { border-color: var(--amber); color: var(--warm-ink); }
 
 .btn--sm { padding: 9px 18px; font-size: 0.92rem; }
 
@@ -548,7 +573,7 @@ h3 { font-size: 1.2rem; line-height: 1.3; }
    Marquee strip (stats / proof)
    ========================================================================== */
 .strip {
-  background: var(--gradient);
+  background: var(--brand-deep);
   color: var(--on-brand);
   padding: 28px 0;
 }
@@ -641,7 +666,7 @@ h3 { font-size: 1.2rem; line-height: 1.3; }
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  background: var(--gradient);
+  background: var(--brand-deep);
   color: var(--on-brand);
   font-size: 0.85rem;
 }
@@ -782,7 +807,7 @@ h3 { font-size: 1.2rem; line-height: 1.3; }
   box-shadow: var(--shadow-sm);
 }
 .plan--premium {
-  background: var(--gradient);
+  background: var(--brand-deep);
   color: var(--on-brand);
   border-color: transparent;
   box-shadow: var(--shadow-lg);
@@ -866,7 +891,7 @@ h3 { font-size: 1.2rem; line-height: 1.3; }
    ========================================================================== */
 .closing-cta {
   position: relative;
-  background: var(--gradient);
+  background: var(--brand-deep);
   color: var(--on-brand);
   border-radius: var(--r-lg);
   padding: 64px 40px;
@@ -880,7 +905,7 @@ h3 { font-size: 1.2rem; line-height: 1.3; }
   inset: 0;
   background:
     radial-gradient(45% 60% at 15% 10%, rgba(255, 255, 255, 0.16) 0%, transparent 70%),
-    radial-gradient(40% 55% at 88% 85%, rgba(255, 149, 0, 0.24) 0%, transparent 70%);
+    radial-gradient(40% 55% at 88% 85%, rgba(255, 176, 37, 0.28) 0%, transparent 70%);
   pointer-events: none;
 }
 .closing-cta > * { position: relative; }
@@ -971,7 +996,7 @@ h3 { font-size: 1.2rem; line-height: 1.3; }
   font-size: clamp(4rem, 14vw, 8rem);
   font-weight: 800;
   letter-spacing: -0.05em;
-  background: var(--gradient);
+  background: var(--brand-deep);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -1271,7 +1296,7 @@ a.tag:hover { text-decoration: none; filter: brightness(0.97); }
 .article-cta {
   max-width: 780px;
   margin: 56px auto 0;
-  background: var(--gradient);
+  background: var(--brand-deep);
   color: var(--on-brand);
   border-radius: var(--r-lg);
   padding: 40px 34px;
