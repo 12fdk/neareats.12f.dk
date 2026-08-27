@@ -133,7 +133,7 @@ final report when you use it.
 
 1. How to find good food in a city you don't know *(used: 2026-08-27)*
 2. Eating gluten-free abroad: what to check before you sit down
-3. How to find halal food while travelling, without relying on guesswork
+3. How to find halal food while travelling, without relying on guesswork *(used: 2026-08-27, from Reddit demand digest — verbatim "[r/HalalFood] Is there any halal ramen near Irvine?" + "Would you use an app that only lists verified Halal-certified businesses?")*
 4. Wheelchair access in restaurants: the questions worth asking in advance
 5. What "open now" actually means, and why apps get it wrong
 6. Finding somewhere to eat late at night in an unfamiliar city *(used: 2026-08-27, from Reddit demand digest — theme "bars-nights-out")*
