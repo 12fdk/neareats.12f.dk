@@ -113,7 +113,9 @@ which is more than most people get out of a bad dinner.
 
 And keep track of the good ones. The restaurant you loved on the second night is
 almost impossible to find again on the fifth, unless you wrote it down when you
-were still standing outside it.
+were still standing outside it — and if you are still in that city, the
+[gluten-free checks](/blog/eating-gluten-free-abroad-what-to-check/) apply to
+your third-week cravings just as much as to your first.
 
 ## The short version
 
