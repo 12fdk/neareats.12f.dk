@@ -16,7 +16,7 @@ summary: >
   cross-contamination.
 coverAlt: "A small table in a cafe with a plate of food and a coffee, morning light through the window"
 hero: true
-related: [how-to-find-good-food-in-a-city-you-dont-know]
+related: []
 faq:
   - question: "Can I trust a restaurant that says it is gluten-free?"
     answer: "Trust the process, not the label. A dedicated gluten-free kitchen is one thing — a regular kitchen that has been told to avoid flour is another, and the second one depends entirely on how disciplined that day's service is. Ask what specifically the kitchen does: separate fryer, separate prep space, gluten-free flours kept apart. You do not need the answer to be perfect, but you need it to be real."
@@ -167,7 +167,6 @@ is enough to make most weeks work.
 
 Checking first — whether that is a quick message to the restaurant, an app
 like NearEats that shows a venue's diet options at a glance before you walk
-over, or just the [tourist-trap tells](/blog/how-to-find-good-food-in-a-city-you-dont-know/)
-you can read on the street itself — saves the worst version of this: finding
-out at the plate. Walking in and reading the menu works too. The point is
-just to move the question earlier.
+over, or just the tourist-trap tells you can read on the street itself —
+saves the worst version of this: finding out at the plate. Walking in and
+reading the menu works too. The point is just to move the question earlier.
