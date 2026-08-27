@@ -730,6 +730,73 @@ h3 { font-size: 1.2rem; line-height: 1.3; }
 .split-shots--single .phone { width: 250px; transform: rotate(-2deg); }
 
 /* ==========================================================================
+   Badge row — the app's amenity badges, rebuilt in HTML
+   --------------------------------------------------------------------------
+   Every chip uses the colour the app gives that concept in
+   AmenityBadges.swift, so the row and the screenshots beside it agree. Note
+   "Wheelchair accessible" is BLUE in the app, not green — don't "fix" it.
+
+   These are always FLAT, bordered and icon-bearing. Brand warmth on this page
+   is always a gradient; that contrast is what stops the orange chips reading
+   as brand (DESIGN.md §2.3).
+   ========================================================================== */
+.badge-showcase {
+  margin-top: 56px;
+  padding: 30px 32px 32px;
+  border-radius: var(--r-lg);
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+}
+.badge-showcase-head {
+  font-size: 0.95rem;
+  font-weight: 650;
+  color: var(--ink);
+  margin-bottom: 18px;
+}
+.badge-showcase-note {
+  font-size: 0.86rem;
+  color: var(--ink-3);
+  margin-top: 18px;
+}
+
+.badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 14px;
+  border-radius: var(--r-pill);
+  font-size: 0.85rem;
+  font-weight: 650;
+  line-height: 1.2;
+  border: 1px solid transparent;
+}
+.badge svg { width: 15px; height: 15px; flex-shrink: 0; }
+
+/* Warnings first and loudest — the app puts the decision-critical negatives
+   ahead of the positives, and so does this row. */
+.badge--warn   { background: var(--red-wash);    color: var(--red-ink);    border-color: color-mix(in srgb, var(--red) 45%, transparent); }
+.badge--open   { background: var(--green-wash);  color: var(--green-ink);  border-color: color-mix(in srgb, var(--green) 32%, transparent); }
+.badge--diet   { background: var(--green-wash);  color: var(--green-ink);  border-color: color-mix(in srgb, var(--green) 32%, transparent); }
+.badge--soon   { background: var(--orange-wash); color: var(--orange-ink); border-color: color-mix(in srgb, var(--orange) 32%, transparent); }
+.badge--halal  { background: var(--teal-wash);   color: var(--teal-ink);   border-color: color-mix(in srgb, var(--teal) 32%, transparent); }
+.badge--kosher { background: var(--indigo-wash); color: var(--indigo-ink); border-color: color-mix(in srgb, var(--indigo) 32%, transparent); }
+.badge--sun    { background: var(--yellow-wash); color: var(--yellow-ink); border-color: color-mix(in srgb, var(--yellow) 45%, transparent); }
+.badge--paw    { background: var(--brown-wash);  color: var(--brown-ink);  border-color: color-mix(in srgb, var(--brown) 32%, transparent); }
+.badge--wifi   { background: var(--indigo-wash); color: var(--indigo-ink); border-color: color-mix(in srgb, var(--indigo) 32%, transparent); }
+.badge--access { background: var(--blue-wash);   color: var(--blue-strong); border-color: color-mix(in srgb, var(--blue) 32%, transparent); }
+.badge--award  { background: var(--gold-wash);   color: var(--gold-ink);   border-color: color-mix(in srgb, var(--gold) 42%, transparent); }
+
+/* Alternating split direction, so consecutive split sections don't stack
+   their phones down the same edge of the page. */
+.split--reverse .split-copy { order: 2; }
+.split--reverse .split-shots { order: 1; }
+
+/* ==========================================================================
    Comparison table
    ========================================================================== */
 .vs-wrap {
@@ -756,7 +823,7 @@ h3 { font-size: 1.2rem; line-height: 1.3; }
   background: var(--bg-soft);
   border-bottom: 1px solid var(--line);
 }
-.vs thead .col-us { color: var(--blue-strong); }
+.vs thead .col-us { color: var(--warm-ink); }
 .vs tbody th {
   font-weight: 600;
   color: var(--ink);
@@ -764,7 +831,7 @@ h3 { font-size: 1.2rem; line-height: 1.3; }
 }
 .vs tbody tr + tr th, .vs tbody tr + tr td { border-top: 1px solid var(--line); }
 .vs td { color: var(--ink-2); }
-.vs .col-us, .vs td.col-us { background: color-mix(in srgb, var(--blue) 6%, var(--surface)); color: var(--ink); font-weight: 600; }
+.vs .col-us, .vs td.col-us { background: color-mix(in srgb, var(--amber) 14%, var(--surface)); color: var(--ink); font-weight: 600; }
 
 /* ==========================================================================
    Personas
@@ -799,8 +866,8 @@ h3 { font-size: 1.2rem; line-height: 1.3; }
   margin-top: 16px;
   font-size: 0.82rem;
   font-weight: 650;
-  color: var(--blue-strong);
-  background: var(--blue-wash);
+  color: var(--warm-ink);
+  background: var(--orange-wash);
   padding: 5px 12px;
   border-radius: var(--r-pill);
 }
@@ -1139,7 +1206,7 @@ h3 { font-size: 1.2rem; line-height: 1.3; }
     color: var(--ink-3);
     font-weight: 600;
   }
-  .vs td.col-us::before { color: var(--blue-strong); }
+  .vs td.col-us::before { color: var(--warm-ink); }
 }
 
 @media (max-width: 400px) {
