@@ -141,7 +141,7 @@ final report when you use it.
 8. Eating out with a toddler: what actually makes a place workable
 9. Vegan while travelling: the difference between "has a salad" and "can feed you"
 10. How to avoid the tourist-trap ring around every station and cathedral
-11. Cash-only restaurants: where they still are and how to not get caught out
+11. Cash-only restaurants: where they still are and how to not get caught out *(used: 2026-08-27, topic bank — digest's only uncovered theme was a false positive, "melted bars" = cooking chocolate)*
 12. What OpenStreetMap knows about restaurants that Google doesn't
 13. Kosher food away from home: planning without a community to ask *(used: 2026-08-27, from Reddit demand digest — theme "halal-kosher")*
 14. How to pick a restaurant when nobody in the group can decide
