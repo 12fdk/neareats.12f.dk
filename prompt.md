@@ -378,7 +378,10 @@ conversation; redirect it and read only a short tail, and only on failure.
    git add posts/ images/blog/ blog/ index.html feed.xml sitemap.xml llms.txt llms-full.txt
    git commit -m "Blog: <title>"
    ```
-   (Avoid `git add -A`.)
+   (Avoid `git add -A`.) Note `git add blog/` is what picks up the new
+   `blog/<slug>/index.html` — adding only the flat files misses it, and the
+   site then serves a 404 for the post while every other post works. Check
+   `git status --short` for the untracked `blog/<slug>/` before committing.
 4. Push: `git push origin main 2>&1 | tail -5` — GitHub Pages deploys from
    `main`, and the IndexNow workflow submits the new URL automatically after the
    deploy.
