@@ -26,8 +26,8 @@ Two funnels feed it:
 Because the app is **paid-upfront with no trial**, the page must overcome
 sight-unseen commitment: lead with the payoff, show real screenshots early,
 make the price feel like an impulse ("less than a coffee, yours forever"),
-and put risk-reduction (no ads, no account, no tracking, no subscription) next
-to every CTA.
+and put risk-reduction (no ads, no account, nothing sold, no subscription)
+next to every CTA.
 
 ## Hard content rules
 
@@ -38,8 +38,14 @@ to every CTA.
   *(Known drift: the app repo's `fastlane/screenshots_framed/*/title.strings`
   slot `10-Cafes` still reads "Free & Private" — do not copy that string onto
   this site; the approved replacement is "Private, No Ads".)*
-  Allowed claims: "No ads", "No tracking / no account", "No subscription",
+  Allowed claims: "No ads", "No account", "No subscription", "Nothing sold",
   "Buy once, yours forever".
+- **Never claim the app does no tracking.** It ships PostHog with session replay,
+  default-on, and no in-app opt-out (`TelemetryManager.swift:67-84`). Decided
+  2026-08-27 (issue #22): keep the analytics, soften the claim. The true and
+  sufficient claims are **no account, no ads, no data sold, no paid placement**,
+  plus a link to `/privacy-policy.html`. The store metadata still says "no
+  tracking" in all 49 locales — that is an upstream fix, not something to copy.
 - **No invented testimonials or star ratings.** The app has **0 public ratings**.
   Use *personas* ("For the traveller who just landed…"), like the sister sites do.
   Swap in real quotes only when they exist.
@@ -54,7 +60,7 @@ to every CTA.
 
 NearEats is an iPhone app that finds **restaurants, cafes and bars near you** and
 tells you the things that decide where you actually go. Fully client-side — no
-backend, no account, no tracking. Data comes from **OpenStreetMap (Overpass)** and
+backend and no account. Data comes from **OpenStreetMap (Overpass)** and
 **Apple Maps**, merged so a venue found in both appears **once** with the best
 fields of each. 30-day on-device cache, so it is fast and works offline-ish.
 
@@ -72,7 +78,7 @@ Shipped features worth selling (mirrors the 10-slot screenshot plan in
 | Warning badges | Cash only / not wheelchair accessible — the gotchas others bury |
 | Search + filters | Search everything you've found; "Open late" filter |
 | Visited "Been here" journal | Remember the good ones |
-| Privacy | No account, no ads, no tracking, works anywhere |
+| Privacy | No account, no ads, nothing sold, works anywhere |
 
 App is localized into **49 storefront languages**; the *site* ships English-only
 for now (revisit hreflang only if a storefront shows real organic demand).
@@ -155,8 +161,8 @@ Use **absolute paths** (`/css/style.css`, `/images/...`) so blog subfolders reso
 6. **Compare** — "Guessing on the street vs. NearEats" table.
 7. **Who it's for** — personas (traveller, dietary needs, wheelchair user,
    coffee-hunter, night out). **Not testimonials.**
-8. **Pricing** — "$1.99 once. Yours forever." with the no-ads/no-tracking/
-   no-subscription trio directly under it.
+8. **Pricing** — "$1.99 once. Yours forever." with the no-ads / no-account /
+   nothing-sold trio directly under it.
 9. **Blog teaser** — 3 latest posts (generated).
 10. **FAQ** — "Fair questions", incl. why it costs money, why no reviews/photos,
     where the data comes from, what happens to my location.
@@ -266,17 +272,23 @@ and per blog post.
 
 ## Status
 
-Greenfield — the repo is empty. Suggested build order:
+**The site is built.** GitHub Pages is enabled on `main`; the custom domain waits
+on a DNS record (`neareats CNAME 12fdk.github.io`) — until that exists, the
+github.io path 301s to the custom domain, so nothing is publicly reachable yet.
 
-1. `css/style.css` tokens (straight from `DESIGN.md` §2) + `index.html`
-   hero/features/pricing/download — ship the converting page first.
-2. Assets: screenshots, icon, favicons, OG, App Store badge, CNAME.
-3. SEO plumbing: robots, sitemap, llms.txt, IndexNow key + workflow, Umami.
-4. `privacy-policy.html`, `404.html`.
-5. Blog engine: `posts/`, `tools/build.py`, `tools/templates/post.html`,
-   `feed.xml`, blog teaser on the homepage.
-6. `prompt.md` + the weekly cron job on the spark.
+Done: design system, assets, the full landing page (hero → closing CTA), privacy
+policy, 404, SEO plumbing, IndexNow, Umami with per-placement CTA events, the
+blog engine with one seed post, `prompt.md`, and the topic-research tool.
 
-Start from `wrnty.12f.dk` — it is the closest sibling (same static stack, same
-blog generator, IndexNow already wired) — and re-skin, rather than writing from
-scratch.
+Open, and worth knowing about:
+
+- **DNS** — the only thing between here and a live site.
+- **Issue #22, upstream half** — `fastlane/metadata/*/description.txt` in
+  `12fdk/NearEats` still claims "no tracking" in all 49 locales, and
+  `MONETIZATION_STRATEGY.md` §6 lists it under "Claims kept (all true)".
+- **Issue #12, upstream** — `title.strings` slot `10-Cafes` still reads "Free &
+  Private" on a paid app, in all 49 locales.
+- **Issue #17** — the site's screenshots are all light-mode; deferred so the site
+  keeps matching the App Store listing exactly.
+- The weekly blog cron job on the spark is not set up yet; `prompt.md` is ready
+  for it.
