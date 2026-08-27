@@ -4,7 +4,7 @@ description: "How to find and verify kosher food while travelling — what the s
 lede: "Kosher eating away from home is a planning problem, not a search problem. Here is the method — and where it stops being able to help you."
 excerpt: "The supervision symbols and what they cover, the five questions to settle before you eat, the passover trap, and why 'certified' is doing more work than you think."
 tag: dietary
-date: 2026-08-27
+date: 2026-07-16
 keywords: "kosher food while travelling, find kosher restaurants abroad, kosher travel planning, kosher supervision symbols, eating kosher in a new city"
 summary: >
   A practical guide to eating kosher in a city where no one is around who can

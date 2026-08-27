@@ -45,45 +45,49 @@ NearEats is an iPhone app that finds places to eat and drink around you and show
 
 The NearEats blog publishes practical guidance on finding somewhere good to eat — city guides, eating out with dietary requirements, and travel — at https://neareats.12f.dk/blog/ (RSS feed: https://neareats.12f.dk/feed.xml). Posts are tagged `city-guides`, `eating-out`, `dietary` or `travel-tips`.
 
-### Why review scores are a bad way to choose a restaurant when travelling (2026-08-27, travel-tips)
-https://neareats.12f.dk/blog/why-review-scores-are-a-bad-way-to-choose-a-restaurant-when-travelling/
-Why a review score of 4.4 means something different in Copenhagen than in Naples, and why sorting by rating while travelling tends to surface the places that optimise for reviews rather than the places that are actually good. Covers what a score does and does not tell you in an unfamiliar city, the signals that are more useful (walk-in pace, what the local actually orders, whether the kitchen can do one thing well), and how to check whether a place will actually serve you before you commit.
-
-### Wheelchair access in restaurants: the questions that settle the visit (2026-08-27, dietary)
-https://neareats.12f.dk/blog/wheelchair-access-in-restaurants-the-questions-that-settle-the-visit/
-A practical checklist for someone who uses a wheelchair (or is choosing a venue for someone who does) planning a restaurant visit in an unfamiliar city: the two failure points — the threshold and the table — the door-width check that settles most of the risk before the visit, the three questions to ask the venue by phone or message and what each answer tells you, the honest limits of online wheelchair-access data, the toilet as the part people forget to plan for, and what to do when the answer to any of it is no.
-
-### What open now actually means: why food apps get hours wrong (2026-08-27, eating-out)
-https://neareats.12f.dk/blog/what-open-now-actually-means/
-A practical explanation of why opening hours are hard to get right: the difference between front-of-house and kitchen close, split hours, public holiday schedules, and how crowd-mapped data sources (OpenStreetMap, Google) go stale. Includes the specific questions to ask by phone or on arrival, and how to read a place's hours claim so you do not plan an evening around a closed kitchen.
-
-### Kosher food away from home: planning without a community to ask (2026-08-27, dietary)
-https://neareats.12f.dk/blog/kosher-food-away-from-home-planning/
-A practical guide to eating kosher in a city where no one is around who can just tell you the answer: which supervision systems exist, what a certification label actually covers (and when it stops covering — most notably during passover), the questions that settle a restaurant before you sit down, how to plan the first meal of a trip, and the honest limits of online checking. The post is written for a reader who may be the only observant Jew in their group, and distinguishes the standard most people keep (meat and dairy separated, pareve, no shellfish) from more stringent systems that online data will not reflect.
-
-### Moving to a new city: finding your regular spots in the first month (2026-08-27, city-guides)
-https://neareats.12f.dk/blog/first-month-in-a-new-city-finding-your-regular-spots/
-A practical method for building your regular eating places during the first month in a new city: how to scope the search by walking distance instead of app radius, which venue types make good regulars and which are built for one visits, how to vet a candidate place in a single visit by asking for the second or third option on the menu, how to check opening hours, prices, and reservations before you commit to a spot, and the honest limits of crowd-sourced data when your new neighbourhood is thin.
-
-### How to find a place open late in a city you don't know (2026-08-27, eating-out)
-https://neareats.12f.dk/blog/finding-a-place-open-late-in-a-city-you-dont-know/
-A practical method for eating out late in a city you do not know: how closing times work in the main cuisines and city types (kitchen close, split hours, public holidays), what the gaps in the evening mean, which venue types genuinely stay open late, and the ten-minute check you can do before walking, plus the honest limits of any app's opening-hours data.
-
-### How to find halal food while travelling, without relying on guesswork (2026-08-27, dietary)
-https://neareats.12f.dk/blog/find-halal-food-while-travelling/
-A practical method for finding reliably halal food in a city you don't know. It explains what a halal label actually certifies and where its scope stops (meat sourcing versus marinades, sauces and garnishes), which dishes are safe by construction, which ones need asking, and how to confirm before you sit down — checking the meat source, marinades and sauces, and whether the certification is from a body you recognise. It also covers the limits of an app or directory and the questions worth asking staff.
-
-### How to find a decent coffee in a city full of chains (2026-08-27, eating-out)
-https://neareats.12f.dk/blog/find-a-decent-coffee-in-a-city-full-of-chains/
-Practical guidance for finding genuinely good coffee in a city with lots of chain coffee shops. Covers the on-the-spot tells that separate a small roaster from a chain (espresso machines, roast dates, the menu's vocabulary), the street patterns where independents concentrate and where tourist-ring chains concentrate, the two or three questions that settle it at the counter, and the honest limits of any rule of thumb, since a good cafe you have never seen is still possible anywhere.
-
-### Eating out with a severe food allergy abroad: what to check (2026-08-27, dietary)
-https://neareats.12f.dk/blog/eating-out-with-a-severe-food-allergy-abroad/
-A practical guide for someone with a severe (IgE-mediated) food allergy eating in an unfamiliar city: why the reaction timeline changes the decision, the pre-visit questions that separate a kitchen that has built a system from one that will try to be careful, the dish types that are lower risk by construction, the written-word and disclosure-labelling shortcuts, the epinephrine logistics, and the honest limit that no amount of checking makes a shared kitchen safe in the absolute sense. Written for anaphylaxis, not for mild intolerance — the stakes and the checks differ.
-
 ### Eating gluten-free abroad: what to check before you sit down (2026-08-27, dietary)
 https://neareats.12f.dk/blog/eating-gluten-free-abroad-what-to-check/
 A practical guide to eating gluten-free in an unfamiliar city: which menu items are safe by construction and which look safe but are cooked with flour in the pan, the language shortcuts for asking about gluten and cross-contamination, and how to verify a place's gluten-free capability before you sit down. Includes honest limits — no check guarantees safety for a coeliac person, because only the kitchen can speak to its own cross-contamination.
+
+### Cash-only restaurants: where they are and how to not get caught out (2026-08-24, eating-out)
+https://neareats.12f.dk/blog/cash-only-restaurants-where-they-still-are/
+A practical guide to cash-only rules when eating out: which types of venue still run on cash and why, the difference between a place that is cash-only and a country that caps cash payments, what a payment failure at the till actually means, and which details to check before leaving the house so the question comes up before you order rather than after.
+
+### What open now actually means: why food apps get hours wrong (2026-08-20, eating-out)
+https://neareats.12f.dk/blog/what-open-now-actually-means/
+A practical explanation of why opening hours are hard to get right: the difference between front-of-house and kitchen close, split hours, public holiday schedules, and how crowd-mapped data sources (OpenStreetMap, Google) go stale. Includes the specific questions to ask by phone or on arrival, and how to read a place's hours claim so you do not plan an evening around a closed kitchen.
+
+### Why review scores are a bad way to choose a restaurant when travelling (2026-08-15, travel-tips)
+https://neareats.12f.dk/blog/why-review-scores-are-a-bad-way-to-choose-a-restaurant-when-travelling/
+Why a review score of 4.4 means something different in Copenhagen than in Naples, and why sorting by rating while travelling tends to surface the places that optimise for reviews rather than the places that are actually good. Covers what a score does and does not tell you in an unfamiliar city, the signals that are more useful (walk-in pace, what the local actually orders, whether the kitchen can do one thing well), and how to check whether a place will actually serve you before you commit.
+
+### Moving to a new city: finding your regular spots in the first month (2026-08-11, city-guides)
+https://neareats.12f.dk/blog/first-month-in-a-new-city-finding-your-regular-spots/
+A practical method for building your regular eating places during the first month in a new city: how to scope the search by walking distance instead of app radius, which venue types make good regulars and which are built for one visits, how to vet a candidate place in a single visit by asking for the second or third option on the menu, how to check opening hours, prices, and reservations before you commit to a spot, and the honest limits of crowd-sourced data when your new neighbourhood is thin.
+
+### How to find halal food while travelling, without relying on guesswork (2026-08-07, dietary)
+https://neareats.12f.dk/blog/find-halal-food-while-travelling/
+A practical method for finding reliably halal food in a city you don't know. It explains what a halal label actually certifies and where its scope stops (meat sourcing versus marinades, sauces and garnishes), which dishes are safe by construction, which ones need asking, and how to confirm before you sit down — checking the meat source, marinades and sauces, and whether the certification is from a body you recognise. It also covers the limits of an app or directory and the questions worth asking staff.
+
+### How to find a decent coffee in a city full of chains (2026-08-02, eating-out)
+https://neareats.12f.dk/blog/find-a-decent-coffee-in-a-city-full-of-chains/
+Practical guidance for finding genuinely good coffee in a city with lots of chain coffee shops. Covers the on-the-spot tells that separate a small roaster from a chain (espresso machines, roast dates, the menu's vocabulary), the street patterns where independents concentrate and where tourist-ring chains concentrate, the two or three questions that settle it at the counter, and the honest limits of any rule of thumb, since a good cafe you have never seen is still possible anywhere.
+
+### How to find a place open late in a city you don't know (2026-07-29, eating-out)
+https://neareats.12f.dk/blog/finding-a-place-open-late-in-a-city-you-dont-know/
+A practical method for eating out late in a city you do not know: how closing times work in the main cuisines and city types (kitchen close, split hours, public holidays), what the gaps in the evening mean, which venue types genuinely stay open late, and the ten-minute check you can do before walking, plus the honest limits of any app's opening-hours data.
+
+### Wheelchair access in restaurants: the questions that settle the visit (2026-07-25, dietary)
+https://neareats.12f.dk/blog/wheelchair-access-in-restaurants-the-questions-that-settle-the-visit/
+A practical checklist for someone who uses a wheelchair (or is choosing a venue for someone who does) planning a restaurant visit in an unfamiliar city: the two failure points — the threshold and the table — the door-width check that settles most of the risk before the visit, the three questions to ask the venue by phone or message and what each answer tells you, the honest limits of online wheelchair-access data, the toilet as the part people forget to plan for, and what to do when the answer to any of it is no.
+
+### Eating out with a severe food allergy abroad: what to check (2026-07-20, dietary)
+https://neareats.12f.dk/blog/eating-out-with-a-severe-food-allergy-abroad/
+A practical guide for someone with a severe (IgE-mediated) food allergy eating in an unfamiliar city: why the reaction timeline changes the decision, the pre-visit questions that separate a kitchen that has built a system from one that will try to be careful, the dish types that are lower risk by construction, the written-word and disclosure-labelling shortcuts, the epinephrine logistics, and the honest limit that no amount of checking makes a shared kitchen safe in the absolute sense. Written for anaphylaxis, not for mild intolerance — the stakes and the checks differ.
+
+### Kosher food away from home: planning without a community to ask (2026-07-16, dietary)
+https://neareats.12f.dk/blog/kosher-food-away-from-home-planning/
+A practical guide to eating kosher in a city where no one is around who can just tell you the answer: which supervision systems exist, what a certification label actually covers (and when it stops covering — most notably during passover), the questions that settle a restaurant before you sit down, how to plan the first meal of a trip, and the honest limits of online checking. The post is written for a reader who may be the only observant Jew in their group, and distinguishes the standard most people keep (meat and dairy separated, pareve, no shellfish) from more stringent systems that online data will not reflect.
 
 ## How it works, in detail
 

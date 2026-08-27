@@ -4,7 +4,7 @@ description: "A restaurant can fail a wheelchair user in two places — the thre
 lede: "A restaurant can be open, welcoming and fully booked — and still be the wrong table for a wheelchair user, for one reason you can check before you leave. Here is what to ask, in what order."
 excerpt: "The threshold, the door width, the gap under the table and the toilet: the four things to check before you set off, the one number to look up first, and what to say when the answer is no."
 tag: dietary
-date: 2026-08-27
+date: 2026-07-25
 keywords: "wheelchair access restaurants, accessible restaurant, step-free restaurant, accessible toilet, wheelchair friendly cafe"
 summary: >
   A practical checklist for someone who uses a wheelchair (or is choosing a

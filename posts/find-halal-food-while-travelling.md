@@ -4,7 +4,7 @@ description: "How to find reliably halal food in a city you don't know: what the
 lede: "Finding reliably halal food in an unfamiliar city is easier than you think — most of it settles in the minutes before you sit down."
 excerpt: "What a halal label actually covers and where it stops, the dishes that are safe by construction, the ones that need asking, and how to confirm before you order — no phrasebook required."
 tag: dietary
-date: 2026-08-27
+date: 2026-08-07
 keywords: "halal food while travelling, finding halal restaurants abroad, halal abroad, eating halal in a new city, halal certification"
 summary: >
   A practical method for finding reliably halal food in a city you don't

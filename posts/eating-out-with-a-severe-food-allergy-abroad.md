@@ -4,7 +4,7 @@ description: "Eating out with a severe allergy in a city you don't know — the 
 lede: "A severe food allergy in a city you don't know is not a menu-reading problem. It is a kitchen-questions problem — and most of it can be settled before you sit down."
 excerpt: "The pre-visit question that separates a careful kitchen from a careless one, the dish types to trust and to doubt, and the honest limit: no check is a guarantee, only the kitchen can speak to its own."
 tag: dietary
-date: 2026-08-27
+date: 2026-07-20
 keywords: "food allergy while travelling, eating out with a food allergy abroad, severe food allergy abroad, restaurant allergy cross-contamination, peanut allergy travelling"
 summary: >
   A practical guide for someone with a severe (IgE-mediated) food allergy

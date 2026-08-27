@@ -4,7 +4,7 @@ description: "Kitchen close, split hours, public holidays and the data problem b
 lede: "You plan the whole evening around a place, cross town, and the kitchen closed at 21:00 while the bar does business till midnight. Here is why the sign on the door and the app both got it wrong — and what to check first."
 excerpt: "Kitchen close, split hours, public holidays and the data problem behind opening hours — how to check before you walk across town."
 tag: eating-out
-date: 2026-08-27
+date: 2026-08-20
 keywords: "restaurant opening hours, kitchen close time, is the restaurant open now, split opening hours, restaurant open late"
 summary: >
   A practical explanation of why opening hours are hard to get right: the

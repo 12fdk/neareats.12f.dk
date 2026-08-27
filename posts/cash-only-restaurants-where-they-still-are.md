@@ -4,7 +4,7 @@ description: "Where cash-only rules still apply, what happens at the till when y
 lede: "The card declines, the queue behind you is not amused, and the server has no idea what is going on. The cash-only surprise is rare enough to feel personal — and easy to avoid if you check one thing before you walk in."
 excerpt: "Where cash-only rules still apply — from tourist bars to the EU cash-payment caps — and the checks that find a cash-only place before you sit down, not at the till."
 tag: eating-out
-date: 2026-08-27
+date: 2026-08-24
 keywords: "cash only restaurant, cash payment rules, cash limits Europe, paying cash abroad, restaurant payment"
 summary: >
   A practical guide to cash-only rules when eating out: which types of

@@ -5,7 +5,7 @@ description: "What actually separates a good coffee shop from a chain, what to l
 lede: "You are in a city where every other street corner sells coffee in a paper cup with a logo. Somewhere between those logos, the coffee you will actually remember exists. Here is how to find it."
 excerpt: "How to spot the good coffee places in a city drowning in chains — the tells at the door, the words on the menu, and the two street patterns that reliably point at the real ones."
 tag: eating-out
-date: 2026-08-27
+date: 2026-08-02
 keywords: "find good coffee, coffee in a new city, independent coffee shops, specialty coffee, coffee without chains"
 summary: >
   Practical guidance for finding genuinely good coffee in a city with lots of

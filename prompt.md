@@ -115,6 +115,16 @@ expected and fine**. Fall back to the topic bank below.
    `grep -h '^title:' posts/*.md` and read the list. A bank entry is only
    available if no existing post already answers it, whatever this file says.
 
+   **Compare on subject, not on wording.** Titles are not enough — read the
+   `description:` and the `##` headings too:
+   `grep -h -A2 '^description:' posts/*.md` and `grep -h '^## ' posts/*.md`.
+   "How to find a place open late in a city you don't know" and "What 'open
+   now' actually means" do not look alike as titles, and shared roughly two
+   thirds of their sections. If more than a section or two of your planned
+   outline already exists somewhere in `posts/`, you are writing the wrong
+   post — either pick another theme, or write only the part that is genuinely
+   missing and link to the post that owns the rest.
+
    The markers lie by construction: they are only added when a run *takes from
    the bank*, so a topic the digest surfaced independently leaves its matching
    bank entry looking unused forever. That is not hypothetical — "How to find a

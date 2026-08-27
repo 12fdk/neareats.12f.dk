@@ -4,7 +4,7 @@ description: "How to go from eating by accident to having real regular places â€
 lede: "The first month in a new city is when you eat well by accident and badly by default. Here is how to turn that into a short list of places you will actually keep going back to."
 excerpt: "The 20-minute ring that matters, the venue types that become regulars, how to vet a place in one visit, and the three things to settle before you call a table your own."
 tag: city-guides
-date: 2026-08-27
+date: 2026-08-11
 keywords: "moving to a new city, new city food, finding regular restaurants, first month in a new city, settling in"
 summary: >
   A practical method for building your regular eating places during the first

@@ -4,7 +4,7 @@ description: "Why the good places close first, what 22:00 on a menu means, and t
 lede: "It is 22:30, the flight was long, and every restaurant within walking distance is closing at 22:00. Here is how to find a place that will still be open."
 excerpt: "Kitchen close and door close are two clocks, the venue types that stay open past midnight, and the ten-minute check that tells you before you walk."
 tag: eating-out
-date: 2026-08-27
+date: 2026-07-29
 keywords: "restaurants open late, late night food, where to eat late in a new city, open now, finding a restaurant after dark"
 summary: >
   A practical method for eating out late in a city you do not know: how
@@ -43,21 +43,19 @@ The single most common late-night failure is walking into a restaurant at
 stopped at 21:45. The hours page and the menu page are two different
 clocks.
 
-- **Kitchen close** comes before the door close. A restaurant fires its
-  kitchen when orders slow, then either locks the doors or keeps a bar
-  open with cheese, tapas and cold cuts. Dinner menus stop being served;
-  the app's hours may still say "open".
-- **Split hours** are common in Mediterranean cities. Many places close
-  from around 15:00 to 19:00 for the siesta, and some close again early
-  at night. An "open now" reading at 20:00 says nothing about 23:00.
-- **The kitchen is a separate business decision from the bar.** In
-  cities with a bar culture — Berlin, Barcelona, much of Spain and
-  Italy — the bar can serve food from a completely different source,
-  sometimes a catering fridge, sometimes a partner kitchen. What you get
-  at 23:00 is not what the 20:00 menu promised.
-- **Season and holidays move the hours.** Christmas, Easter, summer
-  closures and local public holidays all shift schedules, and crowd-
-  sourced data lags all of them.
+Why that happens — and why the listing carries the bar's number rather than
+the kitchen's — is the subject of its own post: [what "open now" actually
+means](/blog/what-open-now-actually-means/) covers the two clocks, split
+hours, public holidays and where the data comes from. The short version, for
+the late-night case:
+
+- **Kitchen close comes before door close.** A restaurant fires its kitchen
+  when orders slow, then either locks up or keeps a bar running with cheese,
+  tapas and cold cuts. The dinner menu is gone; the app still says "open".
+- **The bar's food is not the kitchen's food.** In cities with a bar culture
+  the late plate can come from a different source entirely — a catering
+  fridge, a partner kitchen. What arrives at 23:00 is not what the 20:00
+  menu promised.
 
 You cannot learn a city's patterns from a list. You can, however, learn
 that the place you are standing outside of actually cooked today.

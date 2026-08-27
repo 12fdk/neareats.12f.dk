@@ -5,7 +5,7 @@ description: "A 4.4-star place can be unremarkable at home and exceptional abroa
 lede: "A 4.5-star restaurant in a city where 4.5 is the floor is a different animal from a 4.5 in a city where 4.5 is the ceiling. Review scores tell you almost nothing about where you are — here is what to check instead."
 excerpt: "Review scores are anchored to the city they're in, not to your expectations. What 4.4 actually means, the signals that survive travel, and the one question worth asking before you order."
 tag: travel-tips
-date: 2026-08-27
+date: 2026-08-15
 keywords: "review scores while travelling, how to choose a restaurant abroad, restaurant ratings abroad, review score meaning, choosing a restaurant in a new city"
 summary: >
   Why a review score of 4.4 means something different in Copenhagen than in
