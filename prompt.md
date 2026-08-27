@@ -150,7 +150,7 @@ final report when you use it.
 17. Moving to a new city: how to find your regular spots in the first month
 18. Solo dining without awkwardness: the venue types that make it easy
 19. Allergies abroad: the phrases and checks that actually work
-20. Why review scores are a bad way to choose a restaurant when travelling
+20. Why review scores are a bad way to choose a restaurant when travelling *(used: 2026-08-27, topic bank — digest's only uncovered theme was a false positive, "melted bars" = cooking chocolate)*
 
 ---
 

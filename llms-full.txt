@@ -45,6 +45,10 @@ NearEats is an iPhone app that finds places to eat and drink around you and show
 
 The NearEats blog publishes practical guidance on finding somewhere good to eat — city guides, eating out with dietary requirements, and travel — at https://neareats.12f.dk/blog/ (RSS feed: https://neareats.12f.dk/feed.xml). Posts are tagged `city-guides`, `eating-out`, `dietary` or `travel-tips`.
 
+### Why review scores are a bad way to choose a restaurant when travelling (2026-08-27, travel-tips)
+https://neareats.12f.dk/blog/why-review-scores-are-a-bad-way-to-choose-a-restaurant-when-travelling/
+Why a review score of 4.4 means something different in Copenhagen than in Naples, and why sorting by rating while travelling tends to surface the places that optimise for reviews rather than the places that are actually good. Covers what a score does and does not tell you in an unfamiliar city, the signals that are more useful (walk-in pace, what the local actually orders, whether the kitchen can do one thing well), and how to check whether a place will actually serve you before you commit.
+
 ### Where to eat late in an unfamiliar city: the method that works (2026-08-27, eating-out)
 https://neareats.12f.dk/blog/where-to-eat-late-in-an-unfamiliar-city/
 A practical method for finding food late in a city you do not know: how closing times actually work (kitchen close versus door close, split hours, seasonal changes, public holidays), the six venue types that stay open late by structure rather than by luck, and the ten-minute pre-walk checks — map apps, a phone call, hotel and bar counters — that settle it before you set off. Includes the honest limits of any opening-hours data, since the 23:00 truth only exists at the door.
