@@ -45,6 +45,10 @@ NearEats is an iPhone app that finds places to eat and drink around you and show
 
 The NearEats blog publishes practical guidance on finding somewhere good to eat — city guides, eating out with dietary requirements, and travel — at https://neareats.12f.dk/blog/ (RSS feed: https://neareats.12f.dk/feed.xml). Posts are tagged `city-guides`, `eating-out`, `dietary` or `travel-tips`.
 
+### Where to eat late in an unfamiliar city: the method that works (2026-08-27, eating-out)
+https://neareats.12f.dk/blog/where-to-eat-late-in-an-unfamiliar-city/
+A practical method for finding food late in a city you do not know: how closing times actually work (kitchen close versus door close, split hours, seasonal changes, public holidays), the six venue types that stay open late by structure rather than by luck, and the ten-minute pre-walk checks — map apps, a phone call, hotel and bar counters — that settle it before you set off. Includes the honest limits of any opening-hours data, since the 23:00 truth only exists at the door.
+
 ### Wheelchair access in restaurants: the questions that settle the visit (2026-08-27, dietary)
 https://neareats.12f.dk/blog/wheelchair-access-in-restaurants-the-questions-that-settle-the-visit/
 A practical checklist for someone who uses a wheelchair (or is choosing a venue for someone who does) planning a restaurant visit in an unfamiliar city: the two failure points — the threshold and the table — the door-width check that settles most of the risk before the visit, the three questions to ask the venue by phone or message and what each answer tells you, the honest limits of online wheelchair-access data, the toilet as the part people forget to plan for, and what to do when the answer to any of it is no.

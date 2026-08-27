@@ -122,7 +122,7 @@ final report when you use it.
 3. How to find halal food while travelling, without relying on guesswork
 4. Wheelchair access in restaurants: the questions worth asking in advance
 5. What "open now" actually means, and why apps get it wrong
-6. Finding somewhere to eat late at night in an unfamiliar city
+6. Finding somewhere to eat late at night in an unfamiliar city *(used: 2026-08-27, from Reddit demand digest — theme "bars-nights-out")*
 7. How to find a decent coffee in a city full of chains
 8. Eating out with a toddler: what actually makes a place workable
 9. Vegan while travelling: the difference between "has a salad" and "can feed you"
