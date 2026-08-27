@@ -1,0 +1,49 @@
+# NearEats
+
+> Find restaurants, cafes and bars near you — with what's open right now, diet options, step-free access, real walking time and one-tap directions. One-time $1.99, no subscription.
+
+NearEats is an iPhone app that finds places to eat and drink around you and shows the details that decide where you actually go: whether a place is open right now (or closing in 25 minutes), whether it does vegan, halal, kosher or gluten-free, whether you can get in without steps, how long the walk really is, and whether it takes cards. It merges OpenStreetMap and Apple Maps so a venue found in both appears once with the best details from each. There is no account and no sign-up. It is a directory of facts, not a review platform — it has no ratings, reviews or user photos, because no open data source provides them honestly.
+
+## Key Facts
+
+- Platform: iOS (iPhone, iOS 18+)
+- Pricing: $1.99 one-time purchase on the App Store. No subscription, no in-app purchases, no ads, no free tier
+- Data sources: OpenStreetMap (Overpass API) and Apple Maps (MapKit), merged and de-duplicated
+- Privacy: no account, no sign-up, no email. Saved and visited places stay on the device; search results are cached locally for 30 days. Anonymous usage analytics including session replay are sent to PostHog (EU) — see https://neareats.12f.dk/privacy-policy.html. Nothing is sold
+- Languages: 49
+- Developer: 12F ApS, Denmark (https://12f.dk/)
+- Website: https://neareats.12f.dk/
+- App Store: https://apps.apple.com/us/app/neareats-restaurant-finder/id6754101006
+
+## Features
+
+- Restaurants, cafes and bars — three categories, switched with one control
+- Clustered map with a synced list; tap a pin to highlight the venue
+- Smart opening status read against the current time: "Open now", "Closes in 25 min", "Opens at 17:00"
+- Open-late filter for the evening question
+- Diet options per venue: vegan, vegetarian, halal, kosher, gluten-free, dairy-free, organic
+- Accessibility: wheelchair access and accessible toilets, including a red warning when a venue is NOT accessible
+- Warning badges for decision-critical negatives, shown ahead of the positives: cash only, not wheelchair accessible
+- Amenities: outdoor seating, Wi-Fi, takeaway, delivery, drive-through, dog-friendly, family-friendly, air conditioning, microbrewery, fireplace
+- Michelin and Bib Gourmand award badges where a venue has one
+- Route-accurate walking time, not straight-line distance
+- "Surprise me" — one tap picks a venue for you
+- Search and filter by name, cuisine or feature
+- "Been here" journal to mark places worth returning to
+- One-tap directions, plus the venue's website and phone number
+- 30-day on-device cache for speed and poor connections
+- Dark mode, Dynamic Type and VoiceOver support
+
+## What NearEats deliberately does not have
+
+- No ratings, reviews, star scores or user photos — no free data source provides them honestly, so the app shows facts instead
+- No account, sign-up or login
+- No ads, and no paid placement: no venue can pay to appear higher in a list
+- No subscription
+
+## Blog
+
+Practical guidance on finding somewhere to eat — city guides, eating out with dietary needs, and travel — published at https://neareats.12f.dk/blog/ (RSS: https://neareats.12f.dk/feed.xml).
+
+<!-- BLOG:LLMS:START -->
+<!-- BLOG:LLMS:END -->
