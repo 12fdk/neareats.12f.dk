@@ -135,7 +135,7 @@ final report when you use it.
 2. Eating gluten-free abroad: what to check before you sit down
 3. How to find halal food while travelling, without relying on guesswork *(used: 2026-08-27, from Reddit demand digest — verbatim "[r/HalalFood] Is there any halal ramen near Irvine?" + "Would you use an app that only lists verified Halal-certified businesses?")*
 4. Wheelchair access in restaurants: the questions worth asking in advance
-5. What "open now" actually means, and why apps get it wrong
+5. What "open now" actually means, and why apps get it wrong *(used: 2026-08-27, from Reddit demand digest — theme "bars-nights-out", "Where is the last place open for food?")*
 6. Finding somewhere to eat late at night in an unfamiliar city *(used: 2026-08-27, from Reddit demand digest — theme "bars-nights-out")*
 7. How to find a decent coffee in a city full of chains
 8. Eating out with a toddler: what actually makes a place workable

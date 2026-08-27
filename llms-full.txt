@@ -53,6 +53,10 @@ Why a review score of 4.4 means something different in Copenhagen than in Naples
 https://neareats.12f.dk/blog/wheelchair-access-in-restaurants-the-questions-that-settle-the-visit/
 A practical checklist for someone who uses a wheelchair (or is choosing a venue for someone who does) planning a restaurant visit in an unfamiliar city: the two failure points — the threshold and the table — the door-width check that settles most of the risk before the visit, the three questions to ask the venue by phone or message and what each answer tells you, the honest limits of online wheelchair-access data, the toilet as the part people forget to plan for, and what to do when the answer to any of it is no.
 
+### What open now actually means: why food apps get hours wrong (2026-08-27, eating-out)
+https://neareats.12f.dk/blog/what-open-now-actually-means/
+A practical explanation of why opening hours are hard to get right: the difference between front-of-house and kitchen close, split hours, public holiday schedules, and how crowd-mapped data sources (OpenStreetMap, Google) go stale. Includes the specific questions to ask by phone or on arrival, and how to read a place's hours claim so you do not plan an evening around a closed kitchen.
+
 ### Kosher food away from home: planning without a community to ask (2026-08-27, dietary)
 https://neareats.12f.dk/blog/kosher-food-away-from-home-planning/
 A practical guide to eating kosher in a city where no one is around who can just tell you the answer: which supervision systems exist, what a certification label actually covers (and when it stops covering — most notably during passover), the questions that settle a restaurant before you sit down, how to plan the first meal of a trip, and the honest limits of online checking. The post is written for a reader who may be the only observant Jew in their group, and distinguishes the standard most people keep (meat and dairy separated, pareve, no shellfish) from more stringent systems that online data will not reflect.
