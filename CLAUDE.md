@@ -79,24 +79,31 @@ for now (revisit hreflang only if a storefront shows real organic demand).
 
 ## Brand — must match the app
 
-**The site's design and colours are the app's design and colours.** NearEats is
-built on iOS system colours with `AccentColor` = system blue `#007AFF`, and its
-Liquid Glass UI leans on a **blue → purple** gradient. The App Store screenshots
-are framed on a warm cream gradient (`#FDE8D6` → `#FFFDF9`, ink `#1A1A1A`). The
-site carries all three so the page and the listing are visibly one product:
-**cream is the surface, blue is the action, orange is the attention.**
+**The site's design and colours are the app's.** Two palettes come out of the
+app and they do different jobs:
 
-- **Blue** `#007AFF` / `#0A84FF` dark — primary, CTAs, links (`--blue-strong`
-  `#0063D1` for small text on white, AA)
-- **Purple** `#AF52DE` / `#BF5AF2` dark — gradient partner; in the app it means
-  "found in both OSM and Apple Maps"
-- **Brand gradient** `linear-gradient(135deg, #007AFF, #AF52DE)` — the app's own
-  glass gradient. Not blue→teal, not blue→indigo.
-- **Orange** `#FF9500` — the scarce accent; in the app it means "closes soon" and
-  marks awards
-- **Green** `#34C759` = open now · **Red** `#FF3B30` = warnings (cash only, not
-  accessible). These are semantics, not decoration — don't re-assign them.
-- **Cream** `#FFF7EF` / `#FDE8D6` surfaces, ink `#1A1A1A`
+- **The identity is the app icon** — an amber → coral map pin on charcoal,
+  sampled from the shipped artwork: `#FFB025` → `#FF8740` → `#FF6750`, ground
+  `#36333E`. **This is the site's brand.** It is the most-repeated asset a user
+  sees (App Store, home screen, favicon, header, hero), and warm reads as
+  appetising for a food app.
+- **The interface is iOS system colours**, `AccentColor` = `#007AFF`. On the
+  site, blue keeps exactly its in-app job: **links and secondary CTAs**.
+
+The App Store screenshots are framed on a warm cream gradient (`#FDE8D6` →
+`#FFFDF9`, ink `#1A1A1A`), which the site adopts as its surfaces. So:
+**cream is the surface, the icon gradient is the action, blue is the link.**
+
+- **Brand gradient** `linear-gradient(135deg, #FFB025, #FF6750)` — the icon,
+  verbatim. **Never white on it** (1.8–2.9:1); buttons take dark ink `#2A1500`.
+- **Deep ramp** `#C2410C → #9A2A12` for full-bleed bands carrying white copy
+  (the closing CTA, the proof strip). One warm family, two luminance ends.
+- **Green** `#34C759` = open now · **Orange** `#FF9500` = closes soon / award ·
+  **Red** `#FF3B30` = warnings · **Purple** `#AF52DE` = found in both sources.
+  These are semantics, not decoration — never re-assign them.
+- **The rule that keeps brand amber apart from semantic orange:** brand warmth is
+  always a *gradient*; semantic orange is always a *flat, bordered, icon-bearing
+  chip*. Never a flat `#FFB025` chip, never a gradient in the badge row.
 - System font stack; no web fonts, no frameworks, no build step for the pages.
 - Light **and** dark mode via CSS custom properties + `prefers-color-scheme`.
 - The app's Liquid Glass language translates to a `.glass` CSS treatment
@@ -105,6 +112,7 @@ site carries all three so the page and the listing are visibly one product:
 
 **The full spec — every token, component, breakpoint and the findings from the
 reference sites — is in `DESIGN.md`. Read it before writing any CSS or HTML.**
+`css/style.css` is the source of truth for the token *values*.
 
 ## Planned structure (mirrors snapdeck.12f.dk / wrnty.12f.dk)
 

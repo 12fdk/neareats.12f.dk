@@ -1,0 +1,41 @@
+<!-- Source for images/og-image.jpg (1200x630).
+     Regenerate:  python3 -m http.server 8000
+                  open http://localhost:8000/tools/og-image.html at 1200x630,
+                  screenshot, then: magick shot.png -strip -quality 88 images/og-image.jpg
+     PNG8 is not an option here - it dithers the cream gradient visibly. -->
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1200px;height:630px;overflow:hidden;
+ font-family:-apple-system,'SF Pro Display','Segoe UI',Helvetica,Arial,sans-serif;
+ background:linear-gradient(160deg,#FDE8D6 0%,#FFF7EF 55%,#FFFDF9 100%);
+ display:flex;align-items:flex-start;gap:48px;padding:64px 64px 0;position:relative}
+body::before{content:'';position:absolute;inset:0;
+ background:radial-gradient(50% 60% at 88% 12%,rgba(255,176,37,.28) 0%,transparent 70%),
+            radial-gradient(46% 56% at 6% 96%,rgba(255,103,80,.20) 0%,transparent 70%)}
+.copy{position:relative;flex:1;min-width:0;padding-top:14px}
+.brandline{display:flex;align-items:center;gap:14px;margin-bottom:26px}
+.brandline img{width:60px;height:60px;border-radius:14px;box-shadow:0 6px 18px rgba(26,26,26,.18)}
+.brandline span{font-size:30px;font-weight:800;letter-spacing:-.02em;color:#1A1A1A}
+h1{font-size:58px;line-height:1.05;font-weight:800;letter-spacing:-.035em;color:#1A1A1A}
+h1 em{font-style:normal;background:linear-gradient(135deg,#FFB025,#FF6750);
+ -webkit-background-clip:text;background-clip:text;color:transparent}
+p{margin-top:20px;font-size:25px;line-height:1.4;color:#55575C;max-width:19ch}
+.chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:28px}
+.chip{font-size:17px;font-weight:650;padding:7px 15px;border-radius:999px}
+.g{background:rgba(52,199,89,.16);color:#12723A;border:1px solid rgba(52,199,89,.34)}
+.o{background:rgba(255,149,0,.16);color:#8A4B00;border:1px solid rgba(255,149,0,.34)}
+.t{background:rgba(48,176,199,.16);color:#186C7D;border:1px solid rgba(48,176,199,.34)}
+.r{background:rgba(255,59,48,.14);color:#A81E16;border:1px solid rgba(255,59,48,.42)}
+.shot{position:relative;flex:0 0 auto;background:#101018;border-radius:44px;padding:9px;
+ box-shadow:0 0 0 2px #2C2C38,0 24px 64px rgba(88,40,20,.30);transform:rotate(2.5deg);margin-top:8px}
+.shot img{display:block;width:292px;border-radius:36px}
+</style></head><body>
+<div class="copy">
+ <div class="brandline"><img src="../images/icon.png"><span>NearEats</span></div>
+ <h1>Find somewhere good to eat, <em>wherever you land</em>.</h1>
+ <p>Restaurants, cafes &amp; bars — with the details that decide it.</p>
+ <div class="chips"><span class="chip g">Open now</span><span class="chip o">Closes in 25 min</span>
+ <span class="chip t">Halal</span><span class="chip r">Cash only</span></div>
+</div>
+<div class="shot"><img src="../images/screenshots/en-US/02-MainList.webp"></div>
+</body></html>
