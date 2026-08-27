@@ -45,6 +45,10 @@ NearEats is an iPhone app that finds places to eat and drink around you and show
 
 The NearEats blog publishes practical guidance on finding somewhere good to eat — city guides, eating out with dietary requirements, and travel — at https://neareats.12f.dk/blog/ (RSS feed: https://neareats.12f.dk/feed.xml). Posts are tagged `city-guides`, `eating-out`, `dietary` or `travel-tips`.
 
+### Wheelchair access in restaurants: the questions that settle the visit (2026-08-27, dietary)
+https://neareats.12f.dk/blog/wheelchair-access-in-restaurants-the-questions-that-settle-the-visit/
+A practical checklist for someone who uses a wheelchair (or is choosing a venue for someone who does) planning a restaurant visit in an unfamiliar city: the two failure points — the threshold and the table — the door-width check that settles most of the risk before the visit, the three questions to ask the venue by phone or message and what each answer tells you, the honest limits of online wheelchair-access data, the toilet as the part people forget to plan for, and what to do when the answer to any of it is no.
+
 ### Kosher food away from home: planning without a community to ask (2026-08-27, dietary)
 https://neareats.12f.dk/blog/kosher-food-away-from-home-planning/
 A practical guide to eating kosher in a city where no one is around who can just tell you the answer: which supervision systems exist, what a certification label actually covers (and when it stops covering — most notably during passover), the questions that settle a restaurant before you sit down, how to plan the first meal of a trip, and the honest limits of online checking. The post is written for a reader who may be the only observant Jew in their group, and distinguishes the standard most people keep (meat and dairy separated, pareve, no shellfish) from more stringent systems that online data will not reflect.
