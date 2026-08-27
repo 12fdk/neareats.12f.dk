@@ -1,0 +1,110 @@
+# NearEats
+
+> Find restaurants, cafes and bars near you — with what's open right now, diet options, step-free access, real walking time and one-tap directions. One-time $1.99, no subscription.
+
+NearEats is an iPhone app that finds places to eat and drink around you and shows the details that decide where you actually go: whether a place is open right now (or closing in 25 minutes), whether it does vegan, halal, kosher or gluten-free, whether you can get in without steps, how long the walk really is, and whether it takes cards. It merges OpenStreetMap and Apple Maps so a venue found in both appears once with the best details from each. There is no account and no sign-up. It is a directory of facts, not a review platform — it has no ratings, reviews or user photos, because no open data source provides them honestly.
+
+## Key Facts
+
+- Platform: iOS (iPhone, iOS 18+)
+- Pricing: $1.99 one-time purchase on the App Store. No subscription, no in-app purchases, no ads, no free tier
+- Data sources: OpenStreetMap (Overpass API) and Apple Maps (MapKit), merged and de-duplicated
+- Privacy: no account, no sign-up, no email. Saved and visited places stay on the device; search results are cached locally for 30 days. Anonymous usage analytics including session replay are sent to PostHog (EU) — see https://neareats.12f.dk/privacy-policy.html. Nothing is sold
+- Languages: 49
+- Developer: 12F ApS, Denmark (https://12f.dk/)
+- Website: https://neareats.12f.dk/
+- App Store: https://apps.apple.com/us/app/neareats-restaurant-finder/id6754101006
+
+## Features
+
+- Restaurants, cafes and bars — three categories, switched with one control
+- Clustered map with a synced list; tap a pin to highlight the venue
+- Smart opening status read against the current time: "Open now", "Closes in 25 min", "Opens at 17:00"
+- Open-late filter for the evening question
+- Diet options per venue: vegan, vegetarian, halal, kosher, gluten-free, dairy-free, organic
+- Accessibility: wheelchair access and accessible toilets, including a red warning when a venue is NOT accessible
+- Warning badges for decision-critical negatives, shown ahead of the positives: cash only, not wheelchair accessible
+- Amenities: outdoor seating, Wi-Fi, takeaway, delivery, drive-through, dog-friendly, family-friendly, air conditioning, microbrewery, fireplace
+- Michelin and Bib Gourmand award badges where a venue has one
+- Route-accurate walking time, not straight-line distance
+- "Surprise me" — one tap picks a venue for you
+- Search and filter by name, cuisine or feature
+- "Been here" journal to mark places worth returning to
+- One-tap directions, plus the venue's website and phone number
+- 30-day on-device cache for speed and poor connections
+- Dark mode, Dynamic Type and VoiceOver support
+
+## What NearEats deliberately does not have
+
+- No ratings, reviews, star scores or user photos — no free data source provides them honestly, so the app shows facts instead
+- No account, sign-up or login
+- No ads, and no paid placement: no venue can pay to appear higher in a list
+- No subscription
+
+## Blog
+
+Practical guidance on finding somewhere to eat — city guides, eating out with dietary needs, and travel — published at https://neareats.12f.dk/blog/ (RSS: https://neareats.12f.dk/feed.xml).
+
+
+
+## How it works, in detail
+
+1. On launch NearEats asks for "when in use" location access, so it knows what "nearby" means.
+2. It checks a local, type-aware cache first; entries are valid for 30 days.
+3. On a miss it queries OpenStreetMap's Overpass API and Apple Maps' MKLocalSearch in parallel.
+4. Results are merged: two records are treated as the same venue when they are within 75 metres of each other and their normalised names are similar enough. OpenStreetMap wins for structured data (cuisine, hours, website, amenities, diet, payment); Apple and reverse geocoding win for the address. A merged venue carries both sources and is drawn in a distinct colour.
+5. Missing addresses are filled in by throttled reverse geocoding.
+6. Results are sorted by distance and shown on the map and in the synced list.
+
+Opening hours come from OpenStreetMap's `opening_hours` strings, parsed on-device and interpreted against the current time, including public holidays (fetched from the Nager.Date public-holiday API for the relevant country).
+
+## Who it is for
+
+- Travellers who have just arrived somewhere unfamiliar and want a trustworthy read on what is around them
+- People with dietary requirements — coeliac, halal, kosher, vegan, dairy-free — who need to know before they walk
+- Wheelchair users and anyone who needs to know about steps and accessible toilets in advance
+- People looking for a specific kind of cafe or bar rather than the nearest chain
+- Groups that cannot decide, via the "Surprise me" pick
+
+## Accuracy and limitations
+
+- Opening hours are as good as the underlying map data. A venue can change its hours faster than the map is updated. NearEats shows what the data says, tells you which source it came from, and puts the venue's phone number one tap away.
+- Coverage depends on OpenStreetMap and Apple Maps having data for the area. Dense urban areas are well covered; remote ones less so.
+- The app does not have ratings, reviews or user photos, and this is deliberate rather than a gap to be filled later.
+
+## Frequently asked questions
+
+### Why does it cost anything, if it's built on open map data?
+
+Because the alternative is worse. An app like this pays for itself either by charging you once, or by selling ads, selling your location, or charging restaurants for placement. We picked the first one. $1.99 buys the whole app, forever, and nobody has any reason to reorder your list.
+
+### Where does the information come from?
+
+OpenStreetMap and Apple Maps. NearEats queries both and merges them, so a venue that exists in both sources appears once, keeping the best details from each. OpenStreetMap is where the rich stuff lives — opening hours, diet options, wheelchair access, amenities — because real people map it.
+
+### Why are there no reviews, ratings or photos?
+
+Because no open data source provides them honestly, and we would rather show you nothing than show you something invented. NearEats is a directory, not a review platform: it tells you the facts about a place — hours, diet, access, amenities, awards, how far it is — and leaves the judgement to you.
+
+### What happens to my location?
+
+There is no account and no NearEats server holding your places. To find what's around you the app sends a coordinate and a search radius to the OpenStreetMap and Apple Maps services, the way any map app must, and caches the results on your phone for 30 days. Your saved and visited places never leave the device. The app does send anonymous usage analytics to PostHog so we can see that it is working — that is described in full in the privacy policy. Nothing is sold to anyone, ever.
+
+### Does it work abroad?
+
+Yes — that's the case it was built for. There is nothing to set up on arrival and no region to pick; it works wherever OpenStreetMap and Apple Maps have coverage, which is most places you'd land. The app itself is available in 49 languages.
+
+### Is it just restaurants?
+
+No. Restaurants, cafes and bars, switched with one control. Cafes for the coffee-and-Wi-Fi question, bars for the evening one — including microbreweries and the places that stay open late.
+
+### How accurate are the opening hours?
+
+They're as good as the map data, which is usually very good and occasionally out of date — a place can change its hours faster than anyone updates the map. NearEats shows you what the data says, interpreted against the current time, and tells you which source it came from. For anywhere you're making a special trip to, the venue's phone number is one tap away.
+
+### What do I need to run it?
+
+An iPhone on iOS 18 or later. Location access, so it knows what "nearby" means. That's the lot — no account, no sign-up, no subscription.
+
+<!-- BLOG:LLMS:START -->
+<!-- BLOG:LLMS:END -->
