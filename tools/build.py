@@ -595,7 +595,19 @@ def build_feed(posts: list[Post]) -> str:
 
 
 def build_sitemap_region(posts: list[Post]) -> str:
+    # The blog INDEX belongs in here too, not just the posts. It used to be
+    # omitted from both this function and the static part of sitemap.xml, so
+    # /blog/ was indexable but never declared — found in an SEO audit.
+    # Its lastmod is the newest post, since that is when the index last changed.
     rows = []
+    if posts:
+        rows.append(f"""  <url>
+    <loc>{SITE}/blog/</loc>
+    <lastmod>{max(p.modified for p in posts).isoformat()}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+""")
     for p in posts:
         rows.append(f"""  <url>
     <loc>{p.url}</loc>

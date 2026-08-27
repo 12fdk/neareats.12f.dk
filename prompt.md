@@ -57,6 +57,14 @@ It costs **$1.99 as a one-time purchase**. Requires **iPhone, iOS 18 or later**.
 Available in 49 languages. Made by 12F ApS in Denmark. App Store:
 `https://apps.apple.com/us/app/neareats-restaurant-finder/id6754101006`
 
+**Authorship and disclosure.** Posts carry a visible "Edited by Robert Jensen"
+byline, a `Person` author in the Article schema, and a standing editorial note
+saying the post was drafted with AI and reviewed by a human before publishing.
+The template adds all three automatically — **do not write a byline, an author
+line or an AI disclaimer into the post body.** Do not write in a voice that
+claims personal lived experience that a human did not have ("when I was in
+Lisbon last year…"). Write from generally-known practice instead.
+
 **Two things you must never write:**
 
 1. **Never call the app free, or say it has a free version.** It is $1.99
@@ -148,6 +156,9 @@ never feel sold to.
   "ultimate", "supercharge"), fake urgency, "download now!", exclamation-mark
   selling, review-style praise of the app, or implying the reader is foolish for
   not using it.
+- Never invent first-person anecdotes. "You have landed, you are hungry" is
+  fine — it addresses the reader. "I ate there last spring" is not, because
+  nobody did.
 - The **gold-standard reference** is
   `posts/how-to-find-good-food-in-a-city-you-dont-know.md` — its tone is exactly
   right. To save context, skim only the top:
