@@ -110,7 +110,21 @@ expected and fine**. Fall back to the topic bank below.
    `travel-tips` permanently empty — which is a worse blog than the demand
    actually justifies, and leaves two of the four tag filters showing nothing.
 5. If the scrape fails or every strong theme is covered, take the highest unused
-   entry from the bank.
+   entry from the bank — but **check it against the posts on disk, not against
+   the *(used)* markers**, before you take it. Run
+   `grep -h '^title:' posts/*.md` and read the list. A bank entry is only
+   available if no existing post already answers it, whatever this file says.
+
+   The markers lie by construction: they are only added when a run *takes from
+   the bank*, so a topic the digest surfaced independently leaves its matching
+   bank entry looking unused forever. That is not hypothetical — "How to find a
+   place open late in a city you don't know" came from the digest, entry 6 stayed
+   unmarked, and a later run took entry 6 and published "Where to eat late in an
+   unfamiliar city" as a second post on the same subject.
+
+   So: when you publish anything that covers a bank entry, mark that entry
+   *(used)* in this file in the same commit, **whether or not you took it from
+   the bank.**
 
 ### Ranked topic bank (fallback, and a map of angles that fit the app)
 
