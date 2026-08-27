@@ -96,6 +96,15 @@ and the quiet street and the 22:00 closing time that is actually 21:30
 for the kitchen. At 21:55 you will be the last table in, which is fine
 if you have planned for it and a disaster if you have not.
 
+Two things make that list work in practice. The first is the **busy test**:
+at 22:30, a full window and a lit kitchen is better evidence of live cooking
+than any listing, anywhere. The queue is the review. The second is the
+**station trap** — the all-night options clustered around a major station are
+the same few chains in city after city, and they are reliably open and
+reliably mediocre. The places worth ten more minutes on foot are usually in
+the residential streets just past the tourist ring, which is also where the
+lights go off earliest. That is the trade: better food, narrower window.
+
 ## Check before you walk
 
 Walking in a city you do not know costs twenty minutes each way, and the

@@ -16,7 +16,7 @@ summary: >
   data when your new neighbourhood is thin.
 coverAlt: "A narrow old-European side street at dusk with small restaurant terraces, low warm lamps and white tablecloths, deep blue evening sky"
 hero: true
-related: [where-to-eat-late-in-an-unfamiliar-city, eating-gluten-free-abroad-what-to-check]
+related: [finding-a-place-open-late-in-a-city-you-dont-know, eating-gluten-free-abroad-what-to-check]
 faq:
   - question: 'How many restaurants do I need to have tried before I have regulars?'
     answer: 'Fewer than you think. A working set is around five to eight places: two or three for weeknight dinners, one or two for weekends, one coffee spot, and one or two for the things you specifically want — a good pastry, a late kitchen, a place with a proper veg option. Depth beats breadth: ten places you have tried once is not a set, but three you have returned to are.'
@@ -131,7 +131,7 @@ what you will be eating for years.
 You have been to four of the eight places. Two of them are clearly the ones.
 Before you commit to them as regulars, settle three things:
 
-- **Opening hours, and what they mean.** A place that says 18:00–23:00 may mean the kitchen closes at 21:30 while the bar takes orders until 22:45. Ask the counter, not the menu. And a place closed on Tuesdays may still be cooking for a bar crowd that evening. The same logic — kitchen close versus door close, split hours, what the posted hours actually mean — is the first problem of [eating late in a city you do not know](/blog/where-to-eat-late-in-an-unfamiliar-city/), and it transfers directly to the regulars you are building now.
+- **Opening hours, and what they mean.** A place that says 18:00–23:00 may mean the kitchen closes at 21:30 while the bar takes orders until 22:45. Ask the counter, not the menu. And a place closed on Tuesdays may still be cooking for a bar crowd that evening. The same logic — kitchen close versus door close, split hours, what the posted hours actually mean — is the first problem of [eating late in a city you do not know](/blog/finding-a-place-open-late-in-a-city-you-dont-know/), and it transfers directly to the regulars you are building now.
 - **The price of a normal dinner, including service.** In some cities a 15%
   service charge is automatic; in others it is not. A menu price of 18 euros
   and a total of 21 are two different numbers, and the second one is the one

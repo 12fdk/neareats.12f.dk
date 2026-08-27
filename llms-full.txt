@@ -49,10 +49,6 @@ The NearEats blog publishes practical guidance on finding somewhere good to eat 
 https://neareats.12f.dk/blog/why-review-scores-are-a-bad-way-to-choose-a-restaurant-when-travelling/
 Why a review score of 4.4 means something different in Copenhagen than in Naples, and why sorting by rating while travelling tends to surface the places that optimise for reviews rather than the places that are actually good. Covers what a score does and does not tell you in an unfamiliar city, the signals that are more useful (walk-in pace, what the local actually orders, whether the kitchen can do one thing well), and how to check whether a place will actually serve you before you commit.
 
-### Where to eat late in an unfamiliar city: the method that works (2026-08-27, eating-out)
-https://neareats.12f.dk/blog/where-to-eat-late-in-an-unfamiliar-city/
-A practical method for finding food late in a city you do not know: how closing times actually work (kitchen close versus door close, split hours, seasonal changes, public holidays), the six venue types that stay open late by structure rather than by luck, and the ten-minute pre-walk checks — map apps, a phone call, hotel and bar counters — that settle it before you set off. Includes the honest limits of any opening-hours data, since the 23:00 truth only exists at the door.
-
 ### Wheelchair access in restaurants: the questions that settle the visit (2026-08-27, dietary)
 https://neareats.12f.dk/blog/wheelchair-access-in-restaurants-the-questions-that-settle-the-visit/
 A practical checklist for someone who uses a wheelchair (or is choosing a venue for someone who does) planning a restaurant visit in an unfamiliar city: the two failure points — the threshold and the table — the door-width check that settles most of the risk before the visit, the three questions to ask the venue by phone or message and what each answer tells you, the honest limits of online wheelchair-access data, the toilet as the part people forget to plan for, and what to do when the answer to any of it is no.
@@ -84,10 +80,6 @@ A practical guide for someone with a severe (IgE-mediated) food allergy eating i
 ### Eating gluten-free abroad: what to check before you sit down (2026-08-27, dietary)
 https://neareats.12f.dk/blog/eating-gluten-free-abroad-what-to-check/
 A practical guide to eating gluten-free in an unfamiliar city: which menu items are safe by construction and which look safe but are cooked with flour in the pan, the language shortcuts for asking about gluten and cross-contamination, and how to verify a place's gluten-free capability before you sit down. Includes honest limits — no check guarantees safety for a coeliac person, because only the kitchen can speak to its own cross-contamination.
-
-### Food allergies abroad: the phrases and checks that actually work (2026-08-27, dietary)
-https://neareats.12f.dk/blog/allergies-abroad-the-phrases-and-checks-that-actually-work/
-A practical guide to communicating a food allergy in a restaurant that does not speak your language: why a written three-line card beats translation, the process questions that separate a kitchen with a real system from one that will try to be careful, how allergen labelling laws differ by country and what that means for how hard to lean on them, and the honest limit that no phrase, card or law turns a shared kitchen into a guarantee. Written for severe (anaphylactic) allergies; the wording shifts slightly for a mild intolerance.
 
 ## How it works, in detail
 

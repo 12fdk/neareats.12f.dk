@@ -125,6 +125,13 @@ post](/blog/eating-gluten-free-abroad-what-to-check/) gives: the person taking
 your order may have never been trained on your allergen, and a written
 statement removes the translation step entirely.
 
+Count the hops and the reason becomes obvious. Spoken, your allergy passes
+through your accent, the server's vocabulary, the server's memory, and the
+kitchen's reading of the server — four lossy hops, each one a place the word
+can quietly change. A card is one hop, and it is a hop the person who actually
+cooks the dish can take at their own pace, at the pass, rather than at a table
+while you are hungry and mid-conversation.
+
 On the card, in the local language, in three lines:
 
 1. I have a severe allergy to [allergen].
@@ -132,7 +139,24 @@ On the card, in the local language, in three lines:
 3. I need [dish] prepared with no contact with [allergen], including in the
    oil, the sauce and the equipment.
 
+**Name the specific allergen, never the category.** "Nuts" does not survive
+translation: in many kitchens it means tree nuts, and peanuts — which are a
+legume and live in a different part of the kitchen — are not what was ruled
+out. Write peanut, or almond, or sesame. In a kitchen that grinds its own
+sauces, the specific name is the only thing that locates the danger.
+
+**Line three is the one people skip, and it is the one that does the work**,
+because it ties the card to the dish actually being cooked. A card about the
+kitchen in general is a document. A card about *this plate* is an instruction.
+
 You do not need to say the words aloud. You need them on the card.
+
+One caveat on where the lines come from: have them checked by someone who
+lives there, not by a translation app alone. Apps are usually close enough for
+a simple sentence, but a phrase can read perfectly and still be wrong in the
+local culinary context — the "no nuts" that is heard as "no tree nuts", and
+the peanut sauce arrives anyway. A hotel front desk, a local friend, or the
+local-language corner of a forum settles it in two minutes.
 
 **The card is for the kitchen, not the waiter.** The waiter relays. The kitchen
 decides. Hand it over and ask that it goes to the person who cooks the dish,

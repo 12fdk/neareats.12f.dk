@@ -19,7 +19,7 @@ coverAlt: "A narrow restaurant street at dusk with warm window light and a hand-
 hero: true
 related:
   - eating-gluten-free-abroad-what-to-check
-  - where-to-eat-late-in-an-unfamiliar-city
+  - finding-a-place-open-late-in-a-city-you-dont-know
 faq:
   - question: "Is a 4.5-star restaurant guaranteed to be good?"
     answer: "No. A score is best read as a relative signal — roughly where the place sits in its own city — not as a quality certificate. A 4.5 in a city where the median is 4.6 is a different bet from a 4.5 in a city where 4.5 is rare, and review counts are uneven: a place with three five-star reviews is a 5.0. The number narrows the field; it doesn't decide."
