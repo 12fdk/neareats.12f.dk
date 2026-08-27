@@ -123,7 +123,22 @@ NOISE = [
     "update:", "trip report", "photo dump", "pics from", "my trip", "i made",
     "made this", "homemade", "first attempt", "recipe", "cooked", "look at this",
     "[oc]", "album", "sunset", "what did i eat",
+    # Rhetorical and venting posts. These carry a "?" or a question word, so
+    # is_useful() waved them through on a real run — "One of the Best Perks of
+    # Being Vegan? Creativity.", "Is it just me or are doctors…", "My favourite
+    # part of being celiac is…". They are community discourse, not queries.
+    "is it just me", "am i the only", "anyone else feel", "does anyone else feel",
+    "my favourite part", "my favorite part", "best perks", "perks of being",
+    "rant", "vent", "unpopular opinion", "am i wrong", "aita", ", right?",
+    "why do you", "why do people", "so tired of", "i'm done with", "im done with",
+    "the audacity", "you won't believe", "you wont believe",
 ]
+
+# Rhetorical tag questions ending a title — "…, right?", "…, isn't it?". These
+# are agreement-fishing, not queries, and a plain NOISE substring can't catch
+# them reliably because of intervening quote marks.
+TAG_QUESTION = re.compile(
+    r"\b(right|isn'?t it|aren'?t they|am i wrong|or is it just me)\s*[?!]+\s*$")
 QUESTION_WORDS = [
     "how", "what", "why", "when", "which", "anyone", "does", "do you", "should",
     "tips", "advice", "help", "is it", "can i", "any way", "best way", "struggl",
@@ -223,16 +238,30 @@ def titles_from(xml: str) -> list[str]:
     return out
 
 
+# Reddit titles are full of smart punctuation. Normalise it before matching, or
+# a pattern like ", right?" misses «Being "Abused," Right?» purely on quote style.
+_SMART = str.maketrans({"\u2018": "'", "\u2019": "'", "\u201c": '"', "\u201d": '"',
+                        "\u2013": "-", "\u2014": "-", "\u2026": "..."})
+
+
+def normalise(title: str) -> str:
+    return title.translate(_SMART)
+
+
 def is_useful(title: str) -> bool:
-    low = title.lower()
+    low = f" {normalise(title).lower()} "
     if len(title) < 20:
         return False
-    if any(n in low for n in NOISE):
+    # _matches, not `in` — plain substring matching had "rant" killing every
+    # title containing "restaurants", which is most of the useful ones.
+    if any(_matches(n, low) for n in NOISE):
+        return False
+    if TAG_QUESTION.search(low):
         return False
     # All-caps venting posts carry no query intent.
     if sum(c.isupper() for c in title) > len(title) * 0.6:
         return False
-    return any(w in low for w in QUESTION_WORDS) or "?" in title
+    return any(_matches(w, low) for w in QUESTION_WORDS) or "?" in title
 
 
 # Short keywords must match on word boundaries, with an optional plural "s".
@@ -253,7 +282,7 @@ def _matches(word: str, low: str) -> bool:
 
 
 def themes_of(title: str) -> list[str]:
-    low = f" {title.lower()} "
+    low = f" {normalise(title).lower()} "
     return [key for key, (_, words) in THEMES.items()
             if any(_matches(w, low) for w in words)]
 
