@@ -160,9 +160,9 @@ never feel sold to.
   fine — it addresses the reader. "I ate there last spring" is not, because
   nobody did.
 - The **gold-standard reference** is
-  `posts/how-to-find-good-food-in-a-city-you-dont-know.md` — its tone is exactly
+  `posts/eating-gluten-free-abroad-what-to-check.md` — its tone is exactly
   right. To save context, skim only the top:
-  `head -40 posts/how-to-find-good-food-in-a-city-you-dont-know.md`.
+  `head -40 posts/eating-gluten-free-abroad-what-to-check.md`.
 
 **The brand is always `NearEats`** — one word, capital N, capital E. Never "Near
 Eats", never "Neareats".
