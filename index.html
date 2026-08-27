@@ -80,6 +80,120 @@
     }
   }
   </script>
+  <!-- Structured Data: Organization -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "12F ApS",
+  "url": "https://12f.dk/",
+  "logo": "https://neareats.12f.dk/images/icon.png"
+}
+  </script>
+
+  <!-- Structured Data: FAQPage -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why does it cost anything, if it's built on open map data?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because the alternative is worse. An app like this pays for itself either by charging you once, or by selling ads, selling your location, or charging restaurants for placement. We picked the first one. $1.99 buys the whole app, forever, and nobody has any reason to reorder your list."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where does the information come from?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "OpenStreetMap and Apple Maps. NearEats queries both and merges them, so a venue that exists in both sources appears once, keeping the best details from each. OpenStreetMap is where the rich stuff lives — opening hours, diet options, wheelchair access, amenities — because real people map it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why are there no reviews, ratings or photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because no open data source provides them honestly, and we would rather show you nothing than show you something invented. NearEats is a directory, not a review platform: it tells you the facts about a place — hours, diet, access, amenities, awards, how far it is — and leaves the judgement to you."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens to my location?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It stays on your phone. There is no account, no login and no NearEats server — nothing to build a history on. To find what's around you the app sends a coordinate and a search radius to the OpenStreetMap and Apple Maps services, the way any map app must, and caches the results locally for 30 days. Nothing is stored anywhere else, and nothing is sold."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it work abroad?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — that's the case it was built for. There is nothing to set up on arrival and no region to pick; it works wherever OpenStreetMap and Apple Maps have coverage, which is most places you'd land. The app itself is available in 49 languages."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it just restaurants?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Restaurants, cafes and bars, switched with one control. Cafes for the coffee-and-Wi-Fi question, bars for the evening one — including microbreweries and the places that stay open late."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How accurate are the opening hours?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "They're as good as the map data, which is usually very good and occasionally out of date — a place can change its hours faster than anyone updates the map. NearEats shows you what the data says, interpreted against the current time, and tells you which source it came from. For anywhere you're making a special trip to, the venue's phone number is one tap away."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What do I need to run it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An iPhone on iOS 18 or later. Location access, so it knows what \"nearby\" means. That's the lot — no account, no sign-up, no subscription."
+      }
+    }
+  ]
+}
+  </script>
+
+  <!-- Structured Data: HowTo -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to find somewhere to eat nearby with NearEats",
+  "description": "Find a restaurant, cafe or bar near you that is open, suits your diet and that you can get into — in three steps.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Open it",
+      "text": "Open NearEats and allow location access. The map fills with the restaurants, cafes and bars around you. There is no account and no sign-up."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Narrow it down",
+      "text": "Switch between restaurants, cafes and bars, filter to open now or open late, and check the diet, accessibility and amenity badges to rule places out before you walk."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Go",
+      "text": "Pick a venue for turn-by-turn directions, its website and its phone number."
+    }
+  ]
+}
+  </script>
 </head>
 <body>
 
@@ -486,6 +600,120 @@
             <p>No account, no email, no location history quietly building somewhere. You bought it once; it works; nobody is monetising where you had lunch.</p>
             <span class="persona-tag">Privacy</span>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section section--soft" id="pricing">
+      <div class="wrap">
+        <div class="section-head fade-in">
+          <span class="eyebrow">Pricing</span>
+          <h2>$1.99, once. <span class="mark">Then it's yours.</span></h2>
+          <p class="lede">Less than the coffee you're about to go and find. No subscription, no upgrade nagging you from inside the app, nothing to cancel later.</p>
+        </div>
+
+        <div class="plans plans--single fade-in">
+          <div class="plan plan--premium">
+            <span class="plan-flag">One-time purchase</span>
+            <p class="plan-name">NearEats</p>
+            <p class="plan-price">$1.99</p>
+            <p class="plan-note">Paid once on the App Store. Every feature, no gates.</p>
+            <ul>
+              <li><span class="tick" aria-hidden="true">✓</span> Restaurants, cafes and bars — all three, all included</li>
+              <li><span class="tick" aria-hidden="true">✓</span> Every filter, badge and detail. Nothing held back for a "Pro" tier</li>
+              <li><span class="tick" aria-hidden="true">✓</span> No ads. Nobody pays to be at the top of your list</li>
+              <li><span class="tick" aria-hidden="true">✓</span> No account, no email, no tracking</li>
+              <li><span class="tick" aria-hidden="true">✓</span> Re-download it on any of your devices, and share it through Family Sharing</li>
+              <li><span class="tick" aria-hidden="true">✓</span> 49 languages</li>
+            </ul>
+            <a href="https://apps.apple.com/us/app/neareats-restaurant-finder/id6754101006" class="app-badge" data-umami-event="appstore-click" data-umami-event-placement="pricing" aria-label="Download NearEats on the App Store">
+              <img src="/images/app-store-badge.svg" alt="Download on the App Store" width="162" height="54" loading="lazy">
+            </a>
+          </div>
+        </div>
+        <p class="plan-footnote fade-in">Prices are set per App Store region and shown in your local currency at checkout.</p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="wrap">
+        <div class="section-head fade-in">
+          <span class="eyebrow">FAQ</span>
+          <h2>Fair questions</h2>
+        </div>
+
+        <div class="faq fade-in">
+          <details class="faq-item">
+            <summary>Why does it cost anything, if it&#39;s built on open map data?</summary>
+            <div class="faq-answer">
+              <p>Because the alternative is worse. An app like this pays for itself either by charging you once, or by selling ads, selling your location, or charging restaurants for placement. We picked the first one. $1.99 buys the whole app, forever, and nobody has any reason to reorder your list.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Where does the information come from?</summary>
+            <div class="faq-answer">
+              <p><a href="https://www.openstreetmap.org/">OpenStreetMap</a> and Apple Maps. NearEats queries both and merges them, so a venue that exists in both sources appears once, keeping the best details from each. OpenStreetMap is where the rich stuff lives — opening hours, diet options, wheelchair access, amenities — because real people map it.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Why are there no reviews, ratings or photos?</summary>
+            <div class="faq-answer">
+              <p>Because no open data source provides them honestly, and we would rather show you nothing than show you something invented. NearEats is a <strong>directory, not a review platform</strong>: it tells you the facts about a place — hours, diet, access, amenities, awards, how far it is — and leaves the judgement to you.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>What happens to my location?</summary>
+            <div class="faq-answer">
+              <p>It stays on your phone. There is no account, no login and no NearEats server — nothing to build a history on. To find what's around you the app sends a coordinate and a search radius to the OpenStreetMap and Apple Maps services, the way any map app must, and caches the results locally for 30 days. Nothing is stored anywhere else, and nothing is sold.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Does it work abroad?</summary>
+            <div class="faq-answer">
+              <p>Yes — that's the case it was built for. There is nothing to set up on arrival and no region to pick; it works wherever OpenStreetMap and Apple Maps have coverage, which is most places you'd land. The app itself is available in 49 languages.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Is it just restaurants?</summary>
+            <div class="faq-answer">
+              <p>No. Restaurants, cafes and bars, switched with one control. Cafes for the coffee-and-Wi-Fi question, bars for the evening one — including microbreweries and the places that stay open late.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>How accurate are the opening hours?</summary>
+            <div class="faq-answer">
+              <p>They're as good as the map data, which is usually very good and occasionally out of date — a place can change its hours faster than anyone updates the map. NearEats shows you what the data says, interpreted against the current time, and tells you which source it came from. For anywhere you're making a special trip to, the venue's phone number is one tap away.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>What do I need to run it?</summary>
+            <div class="faq-answer">
+              <p>An iPhone on iOS 18 or later. Location access, so it knows what "nearby" means. That's the lot — no account, no sign-up, no subscription.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing CTA -->
+    <section class="section section--soft">
+      <div class="wrap">
+        <div class="closing-cta fade-in">
+          <h2>You're going to be hungry somewhere unfamiliar again.</h2>
+          <p>Next time, know what's open, what they can cook for you and whether you can get through the door — before you start walking.</p>
+          <a href="https://apps.apple.com/us/app/neareats-restaurant-finder/id6754101006" class="app-badge" data-umami-event="appstore-click" data-umami-event-placement="closing" aria-label="Download NearEats on the App Store">
+            <img src="/images/app-store-badge.svg" alt="Download on the App Store" width="162" height="54" loading="lazy">
+          </a>
+          <p class="requirement">$1.99 one-time purchase · iPhone, iOS 18 or later · No account, no ads, no tracking</p>
         </div>
       </div>
     </section>
