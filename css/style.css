@@ -1057,6 +1057,10 @@ h3 { font-size: 1.2rem; line-height: 1.3; }
 .page-head .wrap { position: relative; }
 .page-head p { max-width: 560px; margin: 16px auto 0; color: var(--ink-2); font-size: 1.08rem; }
 
+/* A page-head already carries generous bottom padding; a full 96px section on
+   top of it leaves a dead band before the first line of copy. */
+.page-head + .section { padding-top: 52px; }
+
 .legal {
   max-width: var(--wrap-narrow);
   margin: 0 auto;
