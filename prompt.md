@@ -249,7 +249,13 @@ hero: true              # show the cover at the top. TRUE for a photograph,
                         # FALSE for the gradient fallback card — that card already
                         # has the title on it, and showing it above the H1 prints
                         # the title twice.
-related: [slug-a, slug-b]   # 2 existing slugs for the "Keep reading" cards
+related: [slug-a, slug-b]   # up to 2 ALREADY-PUBLISHED slugs for the "Keep
+                        #   reading" cards. List as many as exist, not a
+                        #   fixed two — early on there may be only one
+                        #   other post, and then this is a one-item list.
+                        #   Omit the key entirely if this is the only post.
+                        #   NEVER invent a slug to reach two: the build
+                        #   rejects a slug that is not a published post.
 faq:
   - question: "..."
     answer: "..."
@@ -272,7 +278,11 @@ Rules the build enforces, so get them right the first time:
   - `travel-tips` — the traveller's situation specifically: arriving somewhere new,
     language, planning, being away from home.
   Do not invent a new tag.
-- `related` slugs must exist in `posts/`, and must not include this post.
+- `related` slugs must already exist as files in `posts/`, and must not include
+  this post. **Check first** — `ls posts/` — and list only what is there.
+  Fewer than two is correct and expected while the blog is small; the build
+  falls back to the newest other posts on its own when the list is short or
+  absent. A made-up slug is a hard build failure.
 - Every internal `/blog/<slug>/` link in the body must exist.
 - The cover image `images/blog/<slug>.png` must exist before the build passes.
 - Minimum 700 words (you are aiming for far more than that).
