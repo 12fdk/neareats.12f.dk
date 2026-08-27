@@ -79,7 +79,9 @@ fifteen-minute trip. Walking time is the number that matters.
 **Can they feed you specifically?** If you are coeliac, halal, kosher, vegan, or
 you use a wheelchair, this is not an afterthought — it is the first question, and
 it is the one most likely to be answered by a shrug at the door after you have
-already walked there.
+already walked there. If that is you, the
+[checks worth making before you sit down](/blog/eating-gluten-free-abroad-what-to-check/)
+are worth reading on their own.
 
 That last one is worth dwelling on. Most restaurant discovery is built around
 the assumption that any restaurant will do, and that finding food is about taste
@@ -113,9 +115,7 @@ which is more than most people get out of a bad dinner.
 
 And keep track of the good ones. The restaurant you loved on the second night is
 almost impossible to find again on the fifth, unless you wrote it down when you
-were still standing outside it — and if you are still in that city, the
-[gluten-free checks](/blog/eating-gluten-free-abroad-what-to-check/) apply to
-your third-week cravings just as much as to your first.
+were still standing outside it.
 
 ## The short version
 
