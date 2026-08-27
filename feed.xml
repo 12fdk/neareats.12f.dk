@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NearEats Blog</title>
+    <link>https://neareats.12f.dk/blog/</link>
+    <description>Practical advice on finding somewhere good to eat — city guides, eating out with dietary needs, and travel — from the team behind NearEats.</description>
+    <language>en</language>
+    <atom:link href="https://neareats.12f.dk/feed.xml" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>Thu, 27 Aug 2026 08:00:00 +0000</lastBuildDate>
+
+    <item>
+      <title>How to find good food in a city you don't know</title>
+      <link>https://neareats.12f.dk/blog/how-to-find-good-food-in-a-city-you-dont-know/</link>
+      <guid isPermaLink="true">https://neareats.12f.dk/blog/how-to-find-good-food-in-a-city-you-dont-know/</guid>
+      <pubDate>Thu, 27 Aug 2026 08:00:00 +0000</pubDate>
+      <category>travel-tips</category>
+      <description>A practical method for eating well somewhere unfamiliar, without falling for the tourist trap on the corner or walking to a place that shut ten minutes ago.</description>
+    </item>
+
+  </channel>
+</rss>

@@ -43,7 +43,7 @@ NearEats is an iPhone app that finds places to eat and drink around you and show
 
 ## Blog
 
-Practical guidance on finding somewhere to eat — city guides, eating out with dietary needs, and travel — published at https://neareats.12f.dk/blog/ (RSS: https://neareats.12f.dk/feed.xml).
+Practical guidance on finding somewhere good to eat, published at https://neareats.12f.dk/blog/ (RSS: https://neareats.12f.dk/feed.xml).
 
-<!-- BLOG:LLMS:START -->
-<!-- BLOG:LLMS:END -->
+- [How to find good food in a city you don't know](https://neareats.12f.dk/blog/how-to-find-good-food-in-a-city-you-dont-know/) — travel-tips, 2026-08-27. A method for finding somewhere good to eat in an unfamiliar city — read the street before the reviews, check opening hours and distance before you commit, and use the details that actually predict a good meal.
+
