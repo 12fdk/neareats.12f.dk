@@ -45,6 +45,10 @@ NearEats is an iPhone app that finds places to eat and drink around you and show
 
 The NearEats blog publishes practical guidance on finding somewhere good to eat — city guides, eating out with dietary requirements, and travel — at https://neareats.12f.dk/blog/ (RSS feed: https://neareats.12f.dk/feed.xml). Posts are tagged `city-guides`, `eating-out`, `dietary` or `travel-tips`.
 
+### Kosher food away from home: planning without a community to ask (2026-08-27, dietary)
+https://neareats.12f.dk/blog/kosher-food-away-from-home-planning/
+A practical guide to eating kosher in a city where no one is around who can just tell you the answer: which supervision systems exist, what a certification label actually covers (and when it stops covering — most notably during passover), the questions that settle a restaurant before you sit down, how to plan the first meal of a trip, and the honest limits of online checking. The post is written for a reader who may be the only observant Jew in their group, and distinguishes the standard most people keep (meat and dairy separated, pareve, no shellfish) from more stringent systems that online data will not reflect.
+
 ### Eating gluten-free abroad: what to check before you sit down (2026-08-27, dietary)
 https://neareats.12f.dk/blog/eating-gluten-free-abroad-what-to-check/
 A practical guide to eating gluten-free in an unfamiliar city: which menu items are safe by construction and which look safe but are cooked with flour in the pan, the language shortcuts for asking about gluten and cross-contamination, and how to verify a place's gluten-free capability before you sit down. Includes honest limits — no check guarantees safety for a coeliac person, because only the kitchen can speak to its own cross-contamination.

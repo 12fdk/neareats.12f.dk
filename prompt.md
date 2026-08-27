@@ -117,7 +117,7 @@ final report when you use it.
 10. How to avoid the tourist-trap ring around every station and cathedral
 11. Cash-only restaurants: where they still are and how to not get caught out
 12. What OpenStreetMap knows about restaurants that Google doesn't
-13. Kosher food away from home: planning without a community to ask
+13. Kosher food away from home: planning without a community to ask *(used: 2026-08-27, from Reddit demand digest — theme "halal-kosher")*
 14. How to pick a restaurant when nobody in the group can decide
 15. Dog-friendly eating out: how to tell before you walk over
 16. Reading opening hours properly — public holidays, kitchen close, split hours

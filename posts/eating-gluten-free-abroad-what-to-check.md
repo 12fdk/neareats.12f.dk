@@ -172,8 +172,11 @@ deglutinated wheat starch. That is fine for coeliac disease and not fine for a
 wheat allergy. If yours is an allergy rather than coeliac disease, ask about
 wheat specifically, not gluten.
 
-The method above reduces the odds. It does not eliminate them, and it is enough
-to make most weeks work.
+The method above reduces the odds. It does not eliminate them, and it is
+enough to make most weeks work. The same pre-visit discipline — settle the
+questions before the plate — is the whole method for other dietary
+requirements too; see [kosher food away from
+home](/blog/kosher-food-away-from-home-planning/) for the sister walkthrough.
 
 ## The short version
 
