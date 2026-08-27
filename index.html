@@ -45,7 +45,12 @@
 
   <link rel="alternate" type="application/rss+xml" title="NearEats Blog" href="/feed.xml">
 
+  <link rel="preconnect" href="https://umami.robert-jensen.dk" crossorigin>
+  <link rel="dns-prefetch" href="https://umami.robert-jensen.dk">
   <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Analytics: privacy-friendly, cookieless (Umami) -->
+  <script defer src="https://umami.robert-jensen.dk/script.js" data-website-id="cc5a74eb-0eb3-438f-894f-d32d250160bf"></script>
 
   <!-- Structured Data: SoftwareApplication.
        No aggregateRating — the app has no public ratings yet, and inventing one
@@ -100,12 +105,12 @@
           <li><a href="/blog/">Blog</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li class="nav-cta-mobile">
-            <a class="btn btn--primary btn--sm" href="https://apps.apple.com/us/app/neareats-restaurant-finder/id6754101006">Get the app</a>
+            <a class="btn btn--primary btn--sm" data-umami-event="appstore-click" data-umami-event-placement="header-mobile" href="https://apps.apple.com/us/app/neareats-restaurant-finder/id6754101006">Get the app</a>
           </li>
         </ul>
       </nav>
 
-      <a class="btn btn--primary btn--sm nav-cta" href="https://apps.apple.com/us/app/neareats-restaurant-finder/id6754101006">Get the app</a>
+      <a class="btn btn--primary btn--sm nav-cta" data-umami-event="appstore-click" data-umami-event-placement="header" href="https://apps.apple.com/us/app/neareats-restaurant-finder/id6754101006">Get the app</a>
     </div>
   </header>
 
@@ -118,7 +123,7 @@
           <h1>Find somewhere good to eat,<br><span class="mark">wherever you land.</span></h1>
           <p class="hero-sub">Every restaurant, cafe and bar around you — with the details that actually decide it: what's open right now, whether they do vegan or halal, whether you can get in without steps, and how far the walk is.</p>
           <div class="cta-row">
-            <a href="https://apps.apple.com/us/app/neareats-restaurant-finder/id6754101006" class="app-badge" aria-label="Download NearEats on the App Store">
+            <a href="https://apps.apple.com/us/app/neareats-restaurant-finder/id6754101006" class="app-badge" data-umami-event="appstore-click" data-umami-event-placement="hero" aria-label="Download NearEats on the App Store">
               <img src="/images/app-store-badge.svg" alt="Download on the App Store" width="162" height="54">
             </a>
             <a href="#how-it-works" class="btn btn--ghost">See how it works ↓</a>
@@ -296,7 +301,7 @@
             <li><a href="#how-it-works">How it works</a></li>
             <li><a href="#pricing">Pricing</a></li>
             <li><a href="#faq">FAQ</a></li>
-            <li><a href="https://apps.apple.com/us/app/neareats-restaurant-finder/id6754101006">App Store</a></li>
+            <li><a data-umami-event="appstore-click" data-umami-event-placement="footer" href="https://apps.apple.com/us/app/neareats-restaurant-finder/id6754101006">App Store</a></li>
           </ul>
         </div>
 
