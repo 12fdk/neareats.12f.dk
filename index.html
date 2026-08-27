@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NearEats — Find Somewhere Good to Eat, Wherever You Land | Restaurant, Cafe &amp; Bar Finder for iPhone</title>
-  <meta name="description" content="NearEats finds restaurants, cafes and bars near you and shows what actually decides it: what's open right now, vegan and halal options, step-free access, walking time and one-tap directions. No account, no ads, nothing sold. One-time $1.99.">
+  <title>NearEats — Restaurants, Cafes &amp; Bars Near You | iPhone App</title>
+  <meta name="description" content="Find restaurants, cafes and bars near you: what's open right now, vegan and halal options, step-free access and walking time. $1.99 once, no ads.">
   <meta name="keywords" content="restaurant finder, places to eat near me, cafe finder, bar finder, vegan restaurants near me, halal food near me, wheelchair accessible restaurants, open late food, travel food app, no account restaurant app">
   <meta name="author" content="12F ApS">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -52,6 +52,22 @@
   <!-- Analytics: privacy-friendly, cookieless (Umami) -->
   <script defer src="https://umami.robert-jensen.dk/script.js" data-website-id="cc5a74eb-0eb3-438f-894f-d32d250160bf"></script>
 
+  <!-- Structured Data: WebPage with SpeakableSpecification.
+       Points voice assistants at the definition block and the FAQ — the two
+       parts of this page written to be read aloud. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "NearEats — Restaurants, Cafes & Bars Near You",
+    "url": "https://neareats.12f.dk/",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".answer-lede", ".answer-item", ".faq-answer"]
+    }
+  }
+  </script>
+
   <!-- Structured Data: SoftwareApplication.
        No aggregateRating — the app has no public ratings yet, and inventing one
        is both a lie and a Google structured-data violation. Add it when real
@@ -67,6 +83,29 @@
     "url": "https://neareats.12f.dk/",
     "image": "https://neareats.12f.dk/images/icon.png",
     "downloadUrl": "https://apps.apple.com/us/app/neareats-restaurant-finder/id6754101006",
+    "softwareVersion": "1.6",
+    "inLanguage": "en",
+    "screenshot": [
+      "https://neareats.12f.dk/images/screenshots/en-US/01-MapClusters.webp",
+      "https://neareats.12f.dk/images/screenshots/en-US/02-MainList.webp",
+      "https://neareats.12f.dk/images/screenshots/en-US/05-VenueDetail.webp",
+      "https://neareats.12f.dk/images/screenshots/en-US/06-Amenities.webp"
+    ],
+    "featureList": [
+      "Find restaurants, cafes and bars near you",
+      "Open-now status read against the current time, with closing-soon warnings",
+      "Open-late filter",
+      "Diet options: vegan, vegetarian, halal, kosher, gluten-free, dairy-free, organic",
+      "Wheelchair access and accessible toilets, including warnings when a venue is not accessible",
+      "Cash-only warnings",
+      "Michelin and Bib Gourmand award badges",
+      "Route-accurate walking time",
+      "One-tap directions, website and phone number",
+      "Surprise me - a one-tap venue pick",
+      "Been-here journal",
+      "Merged OpenStreetMap and Apple Maps data, de-duplicated",
+      "Available in 49 languages"
+    ],
     "author": {
       "@type": "Organization",
       "name": "12F ApS",
@@ -87,7 +126,19 @@
   "@type": "Organization",
   "name": "12F ApS",
   "url": "https://12f.dk/",
-  "logo": "https://neareats.12f.dk/images/icon.png"
+  "logo": "https://neareats.12f.dk/images/icon.png",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "DK"
+  },
+  "sameAs": [
+    "https://apps.apple.com/us/app/neareats-restaurant-finder/id6754101006"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Robert Jensen",
+    "url": "https://neareats.12f.dk/about.html"
+  }
 }
   </script>
 
@@ -126,7 +177,7 @@
       "name": "What happens to my location?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "There is no account and no NearEats server holding your places. To find what's around you the app sends a coordinate and a search radius to the OpenStreetMap and Apple Maps services, the way any map app must, and caches the results on your phone for 30 days. Your saved and visited places never leave the device. The app does send anonymous usage analytics to PostHog so we can see that it is working — that is described in full in the privacy policy. Nothing is sold to anyone, ever."
+        "text": "It stays on your phone. There is no account and no NearEats server holding your places, and your saved and visited venues never leave the device. To find what's nearby the app sends a coordinate and a radius to OpenStreetMap and Apple Maps, as any map app must. Anonymous analytics go to PostHog, set out in the privacy policy."
       }
     },
     {
@@ -142,7 +193,7 @@
       "name": "Is it just restaurants?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Restaurants, cafes and bars, switched with one control. Cafes for the coffee-and-Wi-Fi question, bars for the evening one — including microbreweries and the places that stay open late."
+        "text": "No — restaurants, cafes and bars, switched with a single control. Cafes cover the coffee-and-Wi-Fi question, bars the evening one, including microbreweries, craft-beer places and the venues that stay open late. Each category carries the same badges, so diet and access information is there whichever you browse."
       }
     },
     {
@@ -150,7 +201,7 @@
       "name": "How accurate are the opening hours?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "They're as good as the map data, which is usually very good and occasionally out of date — a place can change its hours faster than anyone updates the map. NearEats shows you what the data says, interpreted against the current time, and tells you which source it came from. For anywhere you're making a special trip to, the venue's phone number is one tap away."
+        "text": "As good as the map data, which is usually very good and occasionally stale — a venue can change its hours faster than anyone updates the map. NearEats shows what the data says, read against the current time, and names the source. For a special trip, the venue's phone number is one tap away."
       }
     },
     {
@@ -218,6 +269,7 @@
           <li><a href="#who-its-for">Who it's for</a></li>
           <li><a href="#pricing">Pricing</a></li>
           <li><a href="/blog/">Blog</a></li>
+          <li><a href="/about.html">About</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li class="nav-cta-mobile">
             <a class="btn btn--primary btn--sm" data-umami-event="appstore-click" data-umami-event-placement="header-mobile" href="https://apps.apple.com/us/app/neareats-restaurant-finder/id6754101006">Get the app</a>
@@ -282,6 +334,32 @@
           <li><span class="strip-num">49</span><span class="strip-label">languages</span></li>
           <li><span class="strip-num">0</span><span class="strip-label">accounts, ads or data sold</span></li>
         </ul>
+      </div>
+    </section>
+
+    <!-- Direct answer: the definition an answer engine can lift, plus the
+         "near me" phrasing that previously existed only in a meta tag. -->
+    <section class="section" id="what-it-is">
+      <div class="wrap">
+        <div class="answer-block fade-in">
+          <h2>What is NearEats?</h2>
+          <p class="answer-lede"><strong>NearEats is an iPhone app that finds restaurants, cafes and bars near you, and shows what actually decides where you go:</strong> whether a place is open right now, whether it does vegan, halal, kosher or gluten-free, whether you can get in without steps, how long the walk really is, and whether it takes cards. It costs $1.99 once, needs no account, and works in any city.</p>
+        </div>
+
+        <div class="answer-grid">
+          <div class="answer-item fade-in">
+            <h3>How do I find restaurants near me?</h3>
+            <p>Open NearEats and allow location access. It shows every restaurant, cafe and bar around you on a map and a synced list, sorted by distance, with the opening status and walking time on each card. There is no search to type and no account to create.</p>
+          </div>
+          <div class="answer-item fade-in">
+            <h3>How do I find vegan or halal food near me?</h3>
+            <p>Diet options appear as badges on the venue card itself — vegan, vegetarian, halal, kosher, gluten-free, dairy-free and organic — so you can rule places out from the list rather than reading a menu at the door.</p>
+          </div>
+          <div class="answer-item fade-in">
+            <h3>How do I find somewhere open late near me?</h3>
+            <p>Tap the open-late filter. It narrows the list to venues still serving, and each card shows whether a place is open now or closing shortly, checked against the current time rather than a printed timetable.</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -365,34 +443,34 @@
           <h2>Three steps, and <span class="mark">none of them is signing up.</span></h2>
         </div>
 
-        <div class="steps">
-          <article class="step fade-in">
+        <ol class="steps">
+          <li class="step fade-in">
             <div class="phone">
               <img src="/images/screenshots/en-US/01-MapClusters.webp" alt="The map on opening the app, showing restaurants around the user's current location" width="640" height="1391" loading="lazy">
             </div>
             <p class="step-badge"><span>1</span> Open it</p>
             <h3>Everything nearby, straight away</h3>
             <p>No account, no sign-up, no onboarding to sit through. Allow location and the map fills with what's around you — in your home city or one you landed in an hour ago.</p>
-          </article>
+          </li>
 
-          <article class="step fade-in">
+          <li class="step fade-in">
             <div class="phone">
               <img src="/images/screenshots/en-US/06-Amenities.webp" alt="A venue's features: vegan and halal diet badges, wheelchair access, outdoor seating and family-friendly" width="640" height="1391" loading="lazy">
             </div>
             <p class="step-badge"><span>2</span> Narrow it down</p>
             <h3>Rule places out before you walk</h3>
             <p>Switch between restaurants, cafes and bars. Filter to open now, or open late. Check the diet, access and amenity badges — the reasons you'd cross a place off.</p>
-          </article>
+          </li>
 
-          <article class="step fade-in">
+          <li class="step fade-in">
             <div class="phone">
               <img src="/images/screenshots/en-US/05-VenueDetail.webp" alt="A venue detail screen with opening hours, walking time and a get-directions button" width="640" height="1391" loading="lazy">
             </div>
             <p class="step-badge"><span>3</span> Go</p>
             <h3>Directions, one tap away</h3>
             <p>Pick your place and NearEats hands you turn-by-turn directions, the website and the phone number. Then it gets out of the way.</p>
-          </article>
-        </div>
+          </li>
+        </ol>
       </div>
     </section>
 
@@ -700,7 +778,7 @@
           <details class="faq-item">
             <summary>What happens to my location?</summary>
             <div class="faq-answer">
-              <p>There is no account and no NearEats server holding your places. To find what's around you the app sends a coordinate and a search radius to the OpenStreetMap and Apple Maps services, the way any map app must, and caches the results on your phone for 30 days. Your saved and visited places never leave the device. The app does send anonymous usage analytics to PostHog so we can see that it is working — that is described in full in the <a href="/privacy-policy.html">privacy policy</a>. Nothing is sold to anyone, ever.</p>
+              <p>It stays on your phone. There is no account and no NearEats server holding your places, and your saved and visited venues never leave the device. To find what's nearby the app sends a coordinate and a radius to OpenStreetMap and Apple Maps, as any map app must. Anonymous analytics go to PostHog, set out in the <a href="/privacy-policy.html">privacy policy</a>.</p>
             </div>
           </details>
 
@@ -714,21 +792,21 @@
           <details class="faq-item">
             <summary>Is it just restaurants?</summary>
             <div class="faq-answer">
-              <p>No. Restaurants, cafes and bars, switched with one control. Cafes for the coffee-and-Wi-Fi question, bars for the evening one — including microbreweries and the places that stay open late.</p>
+              <p>No — restaurants, cafes and bars, switched with a single control. Cafes cover the coffee-and-Wi-Fi question, bars the evening one, including microbreweries, craft-beer places and the venues that stay open late. Each category carries the same badges, so diet and access information is there whichever you browse.</p>
             </div>
           </details>
 
           <details class="faq-item">
             <summary>How accurate are the opening hours?</summary>
             <div class="faq-answer">
-              <p>They're as good as the map data, which is usually very good and occasionally out of date — a place can change its hours faster than anyone updates the map. NearEats shows you what the data says, interpreted against the current time, and tells you which source it came from. For anywhere you're making a special trip to, the venue's phone number is one tap away.</p>
+              <p>As good as the map data, which is usually very good and occasionally stale — a venue can change its hours faster than anyone updates the map. NearEats shows what the data says, read against the current time, and names the source. For a special trip, the venue's phone number is one tap away.</p>
             </div>
           </details>
 
           <details class="faq-item">
             <summary>What do I need to run it?</summary>
             <div class="faq-answer">
-              <p>An iPhone on iOS 18 or later. Location access, so it knows what "nearby" means. That's the lot — no account, no sign-up, no subscription.</p>
+              <p>An iPhone running iOS 18 or later, and location access so it knows what "nearby" means. That is the lot: no account, no sign-up, no subscription and no ongoing cost. The app is a one-time $1.99 purchase and works in any city with map coverage, in 49 languages.</p>
             </div>
           </details>
         </div>
@@ -778,6 +856,7 @@
         <div class="footer-col">
           <h3>More</h3>
           <ul>
+            <li><a href="/about.html">About</a></li>
             <li><a href="/blog/">Blog</a></li>
             <li><a href="/feed.xml">RSS feed</a></li>
             <li><a href="/privacy-policy.html">Privacy policy</a></li>
