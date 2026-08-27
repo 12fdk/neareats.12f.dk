@@ -85,6 +85,10 @@ A practical guide for someone with a severe (IgE-mediated) food allergy eating i
 https://neareats.12f.dk/blog/eating-gluten-free-abroad-what-to-check/
 A practical guide to eating gluten-free in an unfamiliar city: which menu items are safe by construction and which look safe but are cooked with flour in the pan, the language shortcuts for asking about gluten and cross-contamination, and how to verify a place's gluten-free capability before you sit down. Includes honest limits — no check guarantees safety for a coeliac person, because only the kitchen can speak to its own cross-contamination.
 
+### Food allergies abroad: the phrases and checks that actually work (2026-08-27, dietary)
+https://neareats.12f.dk/blog/allergies-abroad-the-phrases-and-checks-that-actually-work/
+A practical guide to communicating a food allergy in a restaurant that does not speak your language: why a written three-line card beats translation, the process questions that separate a kitchen with a real system from one that will try to be careful, how allergen labelling laws differ by country and what that means for how hard to lean on them, and the honest limit that no phrase, card or law turns a shared kitchen into a guarantee. Written for severe (anaphylactic) allergies; the wording shifts slightly for a mild intolerance.
+
 ## How it works, in detail
 
 1. On launch NearEats asks for "when in use" location access, so it knows what "nearby" means.
