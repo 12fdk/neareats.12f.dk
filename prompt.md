@@ -97,7 +97,19 @@ expected and fine**. Fall back to the topic bank below.
    without inventing facts.
 3. Prefer the specific over the generic. "How to eat gluten-free in Italy without
    a phrasebook" beats "Tips for eating out".
-4. If the scrape fails or every strong theme is covered, take the highest unused
+4. **Break ties toward the tag the blog is thinnest on.** Run
+   `grep -h '^tag:' posts/*.md | sort | uniq -c` first. Where two or more themes
+   have real demand and you could write either well, take the one whose tag has
+   the fewest posts. This is a tie-break, never an override: a genuinely
+   top-ranked theme still wins over a weaker theme in an emptier category, and
+   you never invent demand to fill a tag.
+
+   It matters because the digest is structurally biased. Eight of the twelve
+   subreddits it reads are dietary or accessibility ones, so demand-ranking
+   alone returns `dietary` almost every week and leaves `city-guides` and
+   `travel-tips` permanently empty — which is a worse blog than the demand
+   actually justifies, and leaves two of the four tag filters showing nothing.
+5. If the scrape fails or every strong theme is covered, take the highest unused
    entry from the bank.
 
 ### Ranked topic bank (fallback, and a map of angles that fit the app)
