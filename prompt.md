@@ -148,7 +148,7 @@ final report when you use it.
 5. What "open now" actually means, and why apps get it wrong *(used: 2026-08-27, from Reddit demand digest — theme "bars-nights-out", "Where is the last place open for food?")*
 6. Finding somewhere to eat late at night in an unfamiliar city *(used: 2026-08-27, from Reddit demand digest — theme "bars-nights-out")*
 7. How to find a decent coffee in a city full of chains
-8. Eating out with a toddler: what actually makes a place workable
+8. Eating out with a toddler: what actually makes a place workable *(used: 2026-09-01, topic bank — digest's only uncovered theme was a false positive, "melted bars" = cooking chocolate)*
 9. Vegan while travelling: the difference between "has a salad" and "can feed you"
 10. How to avoid the tourist-trap ring around every station and cathedral
 11. Cash-only restaurants: where they still are and how to not get caught out *(used: 2026-08-27, topic bank — digest's only uncovered theme was a false positive, "melted bars" = cooking chocolate)*

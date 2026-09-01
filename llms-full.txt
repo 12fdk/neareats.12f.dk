@@ -45,6 +45,10 @@ NearEats is an iPhone app that finds places to eat and drink around you and show
 
 The NearEats blog publishes practical guidance on finding somewhere good to eat — city guides, eating out with dietary requirements, and travel — at https://neareats.12f.dk/blog/ (RSS feed: https://neareats.12f.dk/feed.xml). Posts are tagged `city-guides`, `eating-out`, `dietary` or `travel-tips`.
 
+### Eating out with a toddler: what actually makes a place workable (2026-09-01, eating-out)
+https://neareats.12f.dk/blog/eating-out-with-a-toddler-what-actually-makes-a-place-workable/
+A practical guide to picking a restaurant that will actually work with a toddler in the room. It covers which details to check before walking in — seating, menus, pace, what the kitchen will bend on — the menu words that signal a place can feed a small child rather than merely tolerate one, a phone script for the one question that settles most of it, and the honest limits of pre-visiting with a child.
+
 ### Eating gluten-free abroad: what to check before you sit down (2026-08-27, dietary)
 https://neareats.12f.dk/blog/eating-gluten-free-abroad-what-to-check/
 A practical guide to eating gluten-free in an unfamiliar city: which menu items are safe by construction and which look safe but are cooked with flour in the pan, the language shortcuts for asking about gluten and cross-contamination, and how to verify a place's gluten-free capability before you sit down. Includes honest limits — no check guarantees safety for a coeliac person, because only the kitchen can speak to its own cross-contamination.
