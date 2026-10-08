@@ -11,6 +11,22 @@ trust of someone trying to work out where to eat — some of whom will find
 NearEats because the article was worth reading, not because it sold them
 anything.
 
+**What this job is for.** The post exists to bring readers to the site by being
+worth reading — not to sell the app. Topics come from **real, demonstrated
+demand on Reddit**, never from what you imagine people ask. The reader gets a
+complete, useful answer and decides for themselves whether NearEats is
+interesting; one honest mention is the entire commercial budget (§2). **A post
+that reads like an advert is a failed run even if it builds and pushes.**
+
+**Scratch files.** Every file you write to `/tmp` starts with `neareats-`
+(`/tmp/neareats-topics.log`, `/tmp/neareats-build.log`). `/tmp` is shared by
+every cron job in the container, and a run that wrote the bare
+`/tmp/reddit-topics.log` had it overwritten mid-run by a sibling site's scrape —
+it would have published a NearEats post about the other site's topic, with no
+error anywhere. If a log you just wrote mentions subreddits or content that has
+nothing to do with eating out, it is another job's file: rerun with a
+`neareats-` name, do not use it.
+
 ---
 
 ## 0. Who we are writing for (and why they'd ever want the app)
@@ -79,9 +95,13 @@ Lisbon last year…"). Write from generally-known practice instead.
 ## 1. Topic selection — start from live demand
 
 ```
-python3 tools/reddit-topics.py          # ranked digest of what people are asking
-python3 tools/reddit-topics.py --json
+python3 tools/reddit-topics.py > /tmp/neareats-topics.log 2>&1; echo "exit $?"
+python3 tools/reddit-topics.py --json   # same data, machine-readable
 ```
+
+It takes a few minutes and prints progress the whole time — that is normal, let
+it run. Read the digest with `head`/`tail`, never the whole log. Exit code `2`
+means every feed failed: that is the "scrape failed" case below.
 
 It reads relevant subreddits over Reddit's Atom feeds, filters out photos and
 venting, clusters the real questions into themes, and marks the themes an
@@ -92,9 +112,16 @@ expected and fine**. Fall back to the topic bank below.
 
 1. Run the tool. Redirect its output to a file and read the digest, not the raw
    dump.
-2. Pick a theme that is **(a)** genuinely being asked about, **(b)** not already
+2. **If the digest returns any uncovered eating-out / travel-food theme, you
+   must take the topic from it** — the highest-demand theme under UNCOVERED
+   THEMES that is **(a)** genuinely being asked about, **(b)** not already
    covered by a post in `posts/`, and **(c)** something you can answer usefully
-   without inventing facts.
+   without inventing facts. **The digest's verbatim question titles are the
+   brief**: write the post those people would want, and open in their
+   phrasing. A theme whose titles turn out not to be about eating out at all is
+   a false positive, not demand — one week the only uncovered theme was "melted
+   bars", which was cooking chocolate. Say so in the report and treat it as
+   no uncovered theme.
 3. Prefer the specific over the generic. "How to eat gluten-free in Italy without
    a phrasebook" beats "Tips for eating out".
 4. **Break ties toward the tag the blog is thinnest on.** Run
@@ -109,8 +136,8 @@ expected and fine**. Fall back to the topic bank below.
    alone returns `dietary` almost every week and leaves `city-guides` and
    `travel-tips` permanently empty — which is a worse blog than the demand
    actually justifies, and leaves two of the four tag filters showing nothing.
-5. If the scrape fails or every strong theme is covered, take the highest unused
-   entry from the bank — but **check it against the posts on disk, not against
+5. **The bank is the fallback**, only for a scrape that failed (exit `2`) or a
+   digest with no genuine uncovered theme. Take the highest unused entry — but **check it against the posts on disk, not against
    the *(used)* markers**, before you take it. Run
    `grep -h '^title:' posts/*.md` and read the list. A bank entry is only
    available if no existing post already answers it, whatever this file says.
@@ -133,21 +160,22 @@ expected and fine**. Fall back to the topic bank below.
    unfamiliar city" as a second post on the same subject.
 
    So: when you publish anything that covers a bank entry, mark that entry
-   *(used)* in this file in the same commit, **whether or not you took it from
-   the bank.**
+   *(used: YYYY-MM-DD)* in this file in the same commit, **whether or not you
+   took it from the bank**, and name it in your final report.
 
 ### Ranked topic bank (fallback, and a map of angles that fit the app)
 
-These fit the product without being about the product. Cross one off in your
-final report when you use it.
+These fit the product without being about the product. Mark an entry *(used)*
+in the same commit as the post that covers it (step 5), and name it in your
+final report.
 
 1. How to find good food in a city you don't know *(used: 2026-08-27)*
 2. Eating gluten-free abroad: what to check before you sit down
 3. How to find halal food while travelling, without relying on guesswork *(used: 2026-08-27, from Reddit demand digest — verbatim "[r/HalalFood] Is there any halal ramen near Irvine?" + "Would you use an app that only lists verified Halal-certified businesses?")*
-4. Wheelchair access in restaurants: the questions worth asking in advance
+4. Wheelchair access in restaurants: the questions worth asking in advance *(used: covered by `wheelchair-access-in-restaurants-the-questions-that-settle-the-visit`, marker added 2026-10-08)*
 5. What "open now" actually means, and why apps get it wrong *(used: 2026-08-27, from Reddit demand digest — theme "bars-nights-out", "Where is the last place open for food?")*
 6. Finding somewhere to eat late at night in an unfamiliar city *(used: 2026-08-27, from Reddit demand digest — theme "bars-nights-out")*
-7. How to find a decent coffee in a city full of chains
+7. How to find a decent coffee in a city full of chains *(used: covered by `find-a-decent-coffee-in-a-city-full-of-chains`, marker added 2026-10-08)*
 8. Eating out with a toddler: what actually makes a place workable *(used: 2026-09-01, topic bank — digest's only uncovered theme was a false positive, "melted bars" = cooking chocolate)*
 9. Vegan while travelling: the difference between "has a salad" and "can feed you"
 10. How to avoid the tourist-trap ring around every station and cathedral
@@ -157,7 +185,7 @@ final report when you use it.
 14. How to pick a restaurant when nobody in the group can decide
 15. Dog-friendly eating out: how to tell before you walk over
 16. Reading opening hours properly — public holidays, kitchen close, split hours
-17. Moving to a new city: how to find your regular spots in the first month
+17. Moving to a new city: how to find your regular spots in the first month *(used: covered by `first-month-in-a-new-city-finding-your-regular-spots`, marker added 2026-10-08)*
 18. Solo dining without awkwardness: the venue types that make it easy
 19. Allergies abroad: the phrases and checks that actually work *(used: 2026-08-27, topic bank — digest's only uncovered theme was a false positive, "melted bars" = cooking chocolate)*
 20. Why review scores are a bad way to choose a restaurant when travelling *(used: 2026-08-27, topic bank — digest's only uncovered theme was a false positive, "melted bars" = cooking chocolate)*
@@ -331,9 +359,9 @@ Rules the build enforces, so get them right the first time:
 
 ## 6. Images (ComfyUI, with a fallback)
 
-The cover and any inline photos are generated on the co-resident ComfyUI at
-`http://spark-72aa.tail7196c.ts.net:8188` with `comfy-gen` — the same tool the
-sister sites use. No compositing step: the photograph *is* the cover, and the
+The cover and any inline photos are generated on the co-resident ComfyUI with
+`comfy-gen` (it already knows the server address) — the same tool the sister
+sites use. No compositing step: the photograph *is* the cover, and the
 title is rendered by the page, not burned in.
 
 ```
@@ -360,6 +388,7 @@ and set `hero: false`:
 python3 tools/make-cover.py <slug> "<Title>" <tag>
 ```
 
+If ComfyUI hangs past a couple of minutes, stop waiting and use this fallback.
 Do not block the post on the image. A published post with a gradient card beats
 no post.
 
@@ -377,11 +406,13 @@ conversation; redirect it and read only a short tail, and only on failure.
    ```
 2. Fix anything it reports, then build for real:
    ```
-   python3 tools/build.py > /tmp/build.log 2>&1 && tail -3 /tmp/build.log || tail -30 /tmp/build.log
+   python3 tools/build.py > /tmp/neareats-build.log 2>&1 && tail -3 /tmp/neareats-build.log || tail -30 /tmp/neareats-build.log
    ```
    It must print `BUILD OK`. The build regenerates the post page, the blog index,
    the homepage teaser, `feed.xml`, `sitemap.xml`, `llms.txt` and `llms-full.txt`
    — **never hand-edit those files**, your edits will be overwritten.
+   `BUILD OK` validates structure, never truth: run the review pass, including
+   **Site-specific review checks** below, before you commit.
 3. Commit only the post, its images and the regenerated files. Run `git status`
    first; delete any scratch files you created. Then stage deliberately:
    ```
@@ -402,6 +433,56 @@ context.
 
 ---
 
+## Site-specific review checks
+
+These run in the review pass after `BUILD OK` and before `git commit`, on top of
+the generic checks. Re-read the post start to finish as a hostile reader — for
+a dietary post, a reader who has the condition — not as its author. Every item
+here is a mistake a previous run actually published; the build caught none of
+them, because it cannot read.
+
+1. **For each hazard you name, check you gave the RIGHT REASON.** A run said to
+   question risotto "because some versions get a butter-and-flour base";
+   risotto is thickened by the rice's own starch, and the real risk is the
+   stock. A reader who asks your wrong question gets a truthful "no" and is
+   harmed anyway. Wrong reason is worse than no reason.
+2. **If the post addresses two audiences with different risk profiles, check
+   you have not given them one answer.** A run opened by telling "someone with
+   coeliac disease or a wheat allergy" that a wrong guess costs "days, not
+   minutes" — true for coeliac disease, dangerously false for an IgE allergy,
+   which reacts in minutes and can be anaphylaxis. Split them or address one.
+3. **Check what you LEFT OUT would not invalidate what you put in.** A run's
+   "safe by construction" list held grilled fish and rice dishes while never
+   mentioning that soy sauce is brewed with wheat — which silently voids both
+   across East and Southeast Asia. Ask of every list: where in the world does
+   this stop being true?
+
+**Where the generic checks have already bitten this site** — the incidents
+behind them, so you know what they look like here:
+
+- *Foods, dishes and ingredients named correctly.* A run published
+  "Poffertjes-style dishes" as an example of food served on toast; poffertjes
+  are Dutch pancakes. A foreign-sounding word you half-recognise is the single
+  most likely thing to be wrong, and a native reader spots it instantly and
+  stops trusting the whole post. If you cannot state what a dish is, cut it.
+- *FAQ answers read alone.* A run shipped "Which dishes are safe without
+  asking?" whose answer, read alone, told a coeliac that grilled meat and
+  salads need no question — the exact claim the post elsewhere refused to make.
+- *Headings and card text keep their promise.* A run's index card sold "the
+  menu words that mean gluten in ten languages" above a section headed "The
+  words that mean gluten" that contained no words at all.
+- *Self-contradiction.* A run recommended writing down "Is this gluten-free?" in
+  one section and forbade asking it in another.
+- *Local-only facts.* Allergen-disclosure duties, tipping, opening hours,
+  labelling rules and what staff are trained on all vary. "The waiter is a
+  professional, they will know what you mean" is false across most of the
+  world.
+- *Nudge budget (§2).* One NearEats mention in the body, two at the very most,
+  and never in the closing position, where it works as the call to action §4
+  bans.
+
+---
+
 ## 8. Final report (your last message)
 
 Report concisely:
@@ -419,6 +500,8 @@ Report concisely:
   unverified external URLs, no allergy advice framed as a safety guarantee.
 - Confirmation that the post does not call the app free and does not claim it
   does no tracking (§0).
+- What the review pass changed. "Nothing" is a legitimate answer only if you can
+  name what you checked.
 - Anything worth a human glance — e.g. "the topic bank is running low", "Reddit
   was blocked two runs in a row", "ComfyUI has been down for three runs".
 
