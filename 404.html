@@ -19,7 +19,10 @@
   <link rel="stylesheet" href="/css/style.css">
 
   <!-- Analytics: privacy-friendly, cookieless (Umami) -->
-  <script defer src="https://umami.robert-jensen.dk/script.js" data-website-id="cc5a74eb-0eb3-438f-894f-d32d250160bf"></script>
+  <!-- Umami analytics: production-hostname guard — local dev (localhost/127.0.0.1/preview domains) never reports to the neareats.12f.dk production site. -->
+<script>
+(function(){var H="neareats.12f.dk",d=document;if(location.hostname===H||location.hostname==="www."+H){var s=d.createElement("script");s.src="https://umami.robert-jensen.dk/script.js";s.defer=true;s.dataset.websiteId="cc5a74eb-0eb3-438f-894f-d32d250160bf";d.head.appendChild(s);}})();
+</script>
 </head>
 <body>
 
