@@ -201,7 +201,7 @@ final report.
 9. Vegan while travelling: the difference between "has a salad" and "can feed you"
 10. How to avoid the tourist-trap ring around every station and cathedral
 11. Cash-only restaurants: where they still are and how to not get caught out *(used: 2026-08-27, topic bank — digest's only uncovered theme was a false positive, "melted bars" = cooking chocolate)*
-12. What OpenStreetMap knows about restaurants that Google doesn't
+12. What OpenStreetMap knows about restaurants that Google doesn't *(used: 2026-10-10, comparison post — "best <category> apps" shape, bank fallback after digest's only uncovered theme was a false positive: the single r/vegan post was a "being vegan is impossible" argument, not eating-out demand)*
 13. Kosher food away from home: planning without a community to ask *(used: 2026-08-27, from Reddit demand digest — theme "halal-kosher")*
 14. How to pick a restaurant when nobody in the group can decide
 15. Dog-friendly eating out: how to tell before you walk over
