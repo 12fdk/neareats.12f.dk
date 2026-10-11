@@ -1,6 +1,6 @@
 ---
 title: "What open now actually means: why food apps get hours wrong"
-description: "Kitchen close, split hours, public holidays and the data problem behind opening hours — how to check before you walk across town."
+description: "Why the sign, the app and your instinct all get opening hours wrong — kitchen close vs bar close, split hours, holidays — and the two things to check first."
 lede: "You plan the whole evening around a place, cross town, and the kitchen closed at 21:00 while the bar does business till midnight. Here is why the sign on the door and the app both got it wrong — and what to check first."
 excerpt: "Kitchen close, split hours, public holidays and the data problem behind opening hours — how to check before you walk across town."
 tag: eating-out

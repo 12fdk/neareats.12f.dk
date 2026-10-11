@@ -1,6 +1,6 @@
 ---
 title: "Wheelchair access in restaurants: the questions that settle the visit"
-description: "A restaurant can fail a wheelchair user in two places — the threshold and the table. The checks that settle both before you set off."
+description: "The four checks before you set off — door width, threshold, table gap, toilet — and what to say when the answer is no. A step-free restaurant guide."
 lede: "A restaurant can be open, welcoming and fully booked — and still be the wrong table for a wheelchair user, for one reason you can check before you leave. Here is what to ask, in what order."
 excerpt: "The threshold, the door width, the gap under the table and the toilet: the four things to check before you set off, the one number to look up first, and what to say when the answer is no."
 tag: dietary
