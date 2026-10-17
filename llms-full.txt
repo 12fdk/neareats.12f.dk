@@ -45,6 +45,10 @@ NearEats is an iPhone app that finds places to eat and drink around you and show
 
 The NearEats blog publishes practical guidance on finding somewhere good to eat — city guides, eating out with dietary requirements, and travel — at https://neareats.12f.dk/blog/ (RSS feed: https://neareats.12f.dk/feed.xml). Posts are tagged `city-guides`, `eating-out`, `dietary` or `travel-tips`.
 
+### How to avoid the tourist-trap ring around stations and cathedrals (2026-10-17, city-guides)
+https://neareats.12f.dk/blog/how-to-avoid-the-tourist-trap-ring-around-stations-and-cathedrals/
+A field guide to the restaurant ring around stations and cathedrals: why the model exists, how to tell where the ring ends by reading the street, five door-level signals that flag a venue built for one-time visitors (with the exceptions that make each one a cue rather than a verdict), a two-step walk to a place that serves locals, and the honest cases where the ring is the right call.
+
 ### Best restaurant finder apps (2026): what each one actually shows (2026-10-10, travel-tips)
 https://neareats.12f.dk/blog/best-restaurant-finder-apps-2026-what-each-shows/
 A comparison of the restaurant-finding tools most people already have: Google Maps, Apple Maps, Yelp, TripAdvisor and the open-data layer they lean on. It separates the two jobs these tools do — vetting what a place is like versus checking the facts that decide the visit — and explains what reviews can and cannot tell you, why self-reported hours and dietary tags go stale, and how to match the right tool to the specific question in front of you.

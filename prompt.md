@@ -199,7 +199,7 @@ final report.
 7. How to find a decent coffee in a city full of chains *(used: covered by `find-a-decent-coffee-in-a-city-full-of-chains`, marker added 2026-10-08)*
 8. Eating out with a toddler: what actually makes a place workable *(used: 2026-09-01, topic bank — digest's only uncovered theme was a false positive, "melted bars" = cooking chocolate)*
 9. Vegan while travelling: the difference between "has a salad" and "can feed you"
-10. How to avoid the tourist-trap ring around every station and cathedral
+10. How to avoid the tourist-trap ring around every station and cathedral *(used: 2026-10-17, topic bank — digest's only uncovered theme was a false positive: the single r/vegan post was a "being vegan is impossible" argument, not eating-out demand)*
 11. Cash-only restaurants: where they still are and how to not get caught out *(used: 2026-08-27, topic bank — digest's only uncovered theme was a false positive, "melted bars" = cooking chocolate)*
 12. What OpenStreetMap knows about restaurants that Google doesn't *(used: 2026-10-10, comparison post — "best <category> apps" shape, bank fallback after digest's only uncovered theme was a false positive: the single r/vegan post was a "being vegan is impossible" argument, not eating-out demand)*
 13. Kosher food away from home: planning without a community to ask *(used: 2026-08-27, from Reddit demand digest — theme "halal-kosher")*
