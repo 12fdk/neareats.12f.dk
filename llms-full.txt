@@ -45,6 +45,10 @@ NearEats is an iPhone app that finds places to eat and drink around you and show
 
 The NearEats blog publishes practical guidance on finding somewhere good to eat — city guides, eating out with dietary requirements, and travel — at https://neareats.12f.dk/blog/ (RSS feed: https://neareats.12f.dk/feed.xml). Posts are tagged `city-guides`, `eating-out`, `dietary` or `travel-tips`.
 
+### Solo dining without the awkwardness: venues that make it easy (2026-10-24, eating-out)
+https://neareats.12f.dk/blog/solo-dining-without-awkwardness-venue-types-that-make-it-easy/
+A practical guide to eating or drinking alone at a restaurant or bar: which seats make a solo visit feel normal, the venue types built for one person and the catch on each, how to book and sit for one at a fancier place, and a short pre-visit check covering seating, kitchen close, menu format and minimums. Also covers when a solo visit is the wrong call and what to do when the visit starts wrong.
+
 ### How to avoid the tourist-trap ring around stations and cathedrals (2026-10-17, city-guides)
 https://neareats.12f.dk/blog/how-to-avoid-the-tourist-trap-ring-around-stations-and-cathedrals/
 A field guide to the restaurant ring around stations and cathedrals: why the model exists, how to tell where the ring ends by reading the street, five door-level signals that flag a venue built for one-time visitors (with the exceptions that make each one a cue rather than a verdict), a two-step walk to a place that serves locals, and the honest cases where the ring is the right call.

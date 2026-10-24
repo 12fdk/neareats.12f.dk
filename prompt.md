@@ -207,7 +207,7 @@ final report.
 15. Dog-friendly eating out: how to tell before you walk over
 16. Reading opening hours properly — public holidays, kitchen close, split hours
 17. Moving to a new city: how to find your regular spots in the first month *(used: covered by `first-month-in-a-new-city-finding-your-regular-spots`, marker added 2026-10-08)*
-18. Solo dining without awkwardness: the venue types that make it easy
+18. Solo dining without awkwardness: the venue types that make it easy *(used: 2026-10-24, from Reddit demand digest — theme "bars-nights-out", verbatim "do you go to fancy bars and restaurants alone?")*
 19. Allergies abroad: the phrases and checks that actually work *(used: 2026-08-27, topic bank — digest's only uncovered theme was a false positive, "melted bars" = cooking chocolate)*
 20. Why review scores are a bad way to choose a restaurant when travelling *(used: 2026-08-27, topic bank — digest's only uncovered theme was a false positive, "melted bars" = cooking chocolate)*
 
