@@ -6,8 +6,16 @@
     <description>Practical advice on finding somewhere good to eat — city guides, eating out with dietary needs, and travel — from the team behind NearEats.</description>
     <language>en</language>
     <atom:link href="https://neareats.12f.dk/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sat, 24 Oct 2026 08:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 08:00:00 +0000</lastBuildDate>
 
+    <item>
+      <title>Vegan while travelling: 'has a salad' vs 'can feed you'</title>
+      <link>https://neareats.12f.dk/blog/vegan-while-travelling-has-a-salad-vs-can-feed-you/</link>
+      <guid isPermaLink="true">https://neareats.12f.dk/blog/vegan-while-travelling-has-a-salad-vs-can-feed-you/</guid>
+      <pubDate>Sat, 31 Oct 2026 08:00:00 +0000</pubDate>
+      <category>dietary</category>
+      <description>How to tell if a restaurant can actually feed a vegan, not just hand over a side salad: venue types, the menu test, and what to ask.</description>
+    </item>
     <item>
       <title>Solo dining without the awkwardness: venues that make it easy</title>
       <link>https://neareats.12f.dk/blog/solo-dining-without-awkwardness-venue-types-that-make-it-easy/</link>
